@@ -8,6 +8,8 @@ A mobile application that can help healthcare professionals track and accurately
 
 ## Table of Contents
 
+- [Technologies](#technologies)
+
 - [Installation](#installation)
 
 - [Usage](#usage)
@@ -19,6 +21,12 @@ A mobile application that can help healthcare professionals track and accurately
 - [Tests](#tests)
 
 - [Questions](#questions)
+
+## Technologies
+
+- Primary Language: TypeScript
+- User Interface: React Native
+- Database: SQL/MySQL
 
 ## Installation
 
