@@ -20,6 +20,8 @@ A mobile application that can help healthcare professionals track and accurately
 
 - [Tests](#tests)
 
+- [Future Additions](#future)
+
 - [Questions](#questions)
 
 ## Technologies
@@ -55,6 +57,12 @@ To run tests, run the following command:
 ```
 npm test
 ```
+
+## Future
+
+To be added in the future:
+
+-
 
 ## Questions
 
