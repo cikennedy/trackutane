@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Header = () => {
+const Auth = () => {
   return (
     
   )
 }
 
-export default Header
+export default Auth
