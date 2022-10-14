@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { TailwindProvider } from "tailwind-rn";
+import PatientsScreen from "./screens/PatientsScreen";
 import utilities from "./tailwind.json";
 
 export default function App() {
@@ -8,10 +9,7 @@ export default function App() {
     // only time to do ts-ignore!
     // @ts-ignore - TailwindProvider is missing a type definition
     <TailwindProvider utilities={utilities}>
-      <View style={styles.container}>
-        <Text>Open up App.tsx to start working on your app!</Text>
-        <StatusBar style="auto" />
-      </View>
+      <PatientsScreen />
     </TailwindProvider>
   );
 }
