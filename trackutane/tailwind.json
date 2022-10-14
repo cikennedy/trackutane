@@ -9,10 +9,10 @@
 			"display": "none"
 		}
 	},
-	"text-red-500": {
+	"text-blue-600": {
 		"style": {
 			"--tw-text-opacity": 1,
-			"color": "rgb(239 68 68 / var(--tw-text-opacity))"
+			"color": "rgb(37 99 235 / var(--tw-text-opacity))"
 		}
 	}
 }
