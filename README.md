@@ -38,10 +38,6 @@ To install necessary dependencies, run the following command:
 npm i
 ```
 
-## Usage
-
-N/A
-
 ## License
 
 This project is licensed under the MIT license.
@@ -50,19 +46,11 @@ This project is licensed under the MIT license.
 
 Contact me via email if you are interested in contribution to this project.
 
-## Tests
-
-To run tests, run the following command:
-
-```
-npm test
-```
-
 ## Future
 
 To be added in the future:
 
--
+- This application will expand outside of just Accutane to various other medications and areas of medicine
 
 ## Questions
 
