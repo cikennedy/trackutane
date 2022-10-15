@@ -1,10 +1,14 @@
-import { View, Text } from "react-native";
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import PatientsScreen from "../screens/PatientsScreen";
 import VisitsScreen from "../screens/VisitsScreen";
 
-const Tab = createBottomTabNavigator();
+export type TabStackParamList = {
+  Patients: undefined;
+  Visits: undefined;
+};
+
+const Tab = createBottomTabNavigator<TabStackParamList>();
 
 const TabNavigator = () => {
   return (
