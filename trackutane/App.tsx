@@ -1,7 +1,7 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { TailwindProvider } from "tailwind-rn";
 import utilities from "./tailwind.json";
+import { NavigationContainer } from "@react-navigation/native";
 
 import PatientsScreen from "./screens/PatientsScreen";
 
@@ -10,7 +10,9 @@ export default function App() {
     // only time to do ts-ignore!
     // @ts-ignore - TailwindProvider is missing a type definition
     <TailwindProvider utilities={utilities}>
-      <PatientsScreen />
+      <NavigationContainer>
+        <PatientsScreen />
+      </NavigationContainer>
     </TailwindProvider>
   );
 }
