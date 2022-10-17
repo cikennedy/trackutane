@@ -34,6 +34,10 @@
   height: 16rem
 }
 
+.w-full {
+  width: 100%
+}
+
 .border {
   border-width: 1px
 }

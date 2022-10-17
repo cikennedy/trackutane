@@ -1,4 +1,4 @@
-import { ScrollView } from "react-native";
+import { ActivityIndicator, ScrollView } from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useTailwind } from "tailwind-rn";
 import {
@@ -23,11 +23,11 @@ const PatientsScreen = () => {
 
   const navigation = useNavigation<PatientScreenNavigationProp>();
 
-  useLayoutEffect(() => {
-    navigation.setOptions({
-      headerShown: false,
-    });
-  }, []);
+  //   useLayoutEffect(() => {
+  //     navigation.setOptions({
+  //       headerShown: false,
+  //     });
+  //   }, []);
 
   return (
     <ScrollView>
@@ -35,7 +35,8 @@ const PatientsScreen = () => {
         source={{
           uri: "https://github.com/cikennedy/trackutane-typescript/blob/main/trackutane/assets/undraw_medical_care_movn.png?raw=true",
         }}
-        containerStyle={tailwind("2-full h-64")}
+        containerStyle={tailwind("w-full h-64")}
+        PlaceholderContent={<ActivityIndicator />}
       />
     </ScrollView>
   );
