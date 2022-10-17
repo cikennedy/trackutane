@@ -50,6 +50,10 @@ Contact me via email if you are interested in contribution to this project.
 
 To be added in the future:
 
+- Type definition files
+
+Expansion:
+
 - This application will expand outside of just Accutane to various other medications and areas of medicine
 
 ## Questions
