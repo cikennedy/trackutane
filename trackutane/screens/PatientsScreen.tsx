@@ -1,5 +1,5 @@
 import { ScrollView } from "react-native";
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { useTailwind } from "tailwind-rn";
 import {
   CompositeNavigationProp,
@@ -31,8 +31,10 @@ const PatientsScreen = () => {
 
   return (
     <ScrollView>
-      <Image 
-        source={{ uri:  }}
+      <Image
+        source={{
+          uri: "https://github.com/cikennedy/trackutane-typescript/blob/main/trackutane/assets/undraw_medical_care_movn.png?raw=true",
+        }}
         containerStyle={tailwind("2-full h-64")}
       />
     </ScrollView>
