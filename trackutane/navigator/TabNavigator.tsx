@@ -27,18 +27,22 @@ const TabNavigator = () => {
       screenOptions={({ route }) => ({
         tabBarActiveTintColor: "#59C1CC",
         tabBarInactiveTintColor: "gray",
-        tabBarIcon: ({ focused }) => {
+        tabBarIcon: ({ focused, color, size }) => {
           if (route.name === "Patients") {
             return (
               <Icon
                 name="users"
                 type="entypo"
-                color={focused ? "blue" : "gray"}
+                color={focused ? "#59C1CC" : "gray"}
               />
             );
           } else if (route.name === "Visits") {
             return (
-              <Icon name="box" type="entypo" color={focused ? "red" : "gray"} />
+              <Icon
+                name="calendar"
+                type="entypo"
+                color={focused ? "red" : "gray"}
+              />
             );
           }
         },
