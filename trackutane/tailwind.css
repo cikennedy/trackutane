@@ -42,6 +42,19 @@
   border-width: 1px
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem
+}
+
+.pt-5 {
+  padding-top: 1.25rem
+}
+
+.pb-0 {
+  padding-bottom: 0px
+}
+
 .uppercase {
   text-transform: uppercase
 }
