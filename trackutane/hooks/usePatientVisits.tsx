@@ -23,7 +23,7 @@ const usePatientVisits = (userId: string) => {
     // );
   }, [data]);
 
-  return <div>usePatientVisits</div>;
+  return { loading, error, visits };
 };
 
 export default usePatientVisits;
