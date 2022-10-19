@@ -1,3 +1,13 @@
+type Patient {
+  dateAdded: Date
+  name: String
+  address: String
+  city: String
+  zipCode: Int
+  phone: String
+  email: String
+}
+
 type Query {
   """
   Result typed as JSON since it has fields ["-N6rOmxa7vOOTpZZSllL", "-N6rQgCkbLPB1xElUchT", "-N6rSJ4xI3_Cq7u58Wh_", "-N6rSZB4AoMAwrDnm2jF", "-N6rTRzW_JrkHQMdt5QA"] that are invalid graphql identifiers
