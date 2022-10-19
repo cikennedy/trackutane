@@ -1,6 +1,11 @@
 type Patient = {
-  email: string;
+  dateAdded: Date;
   name: string;
+  address: string;
+  city: string;
+  zipCode: number;
+  phone: string;
+  email: string;
 };
 
 type PatientList = {
