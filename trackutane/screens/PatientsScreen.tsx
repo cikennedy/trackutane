@@ -10,6 +10,9 @@ import { TabStackParamList } from "../navigator/TabNavigator";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../navigator/RootNavigator";
 import { Image, Input } from "@rneui/themed";
+import { useQuery } from "@apollo/client";
+import { GET_PATIENTS } from "../graphql/queries";
+import PatientCard from "../components/PatientCard";
 
 // nested stacks, composite navigation prop
 // combine the navigation items with all the types needed
@@ -22,6 +25,7 @@ const PatientsScreen = () => {
   const tailwind = useTailwind();
   const navigation = useNavigation<PatientScreenNavigationProp>();
   const [input, setInput] = useState<string>("");
+  const { loading, error, data } = useQuery(GET_PATIENTS);
 
   //   useLayoutEffect(() => {
   //     navigation.setOptions({
@@ -45,6 +49,12 @@ const PatientsScreen = () => {
         onChangeText={(text) => setInput(text)}
         containerStyle={tailwind("pt-5 pb-0 px-10")}
       />
+
+      {data?.getPatients.map(
+        ({ name: ID, value: { email, name } }: PatientResponse) => (
+          <PatientCard key={ID} email={email} name={name} userId={ID} />
+        )
+      )}
     </ScrollView>
   );
 };
