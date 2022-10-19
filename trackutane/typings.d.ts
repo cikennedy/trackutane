@@ -18,6 +18,7 @@ type Visit = {
   visitDosage: number;
   cumulativeDosage: number;
   nextVisit: string;
+  followUp: string;
 };
 
 type VisitResponse = {
