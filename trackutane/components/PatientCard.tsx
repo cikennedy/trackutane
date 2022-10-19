@@ -1,6 +1,12 @@
 import React from "react";
 
-const PatientCard = () => {
+type Props = {
+  userId: string;
+  name: string;
+  email: string;
+};
+
+const PatientCard = ({ email, name, userId }: Props) => {
   return <div>PatientCard</div>;
 };
 
