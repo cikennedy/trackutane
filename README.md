@@ -12,13 +12,9 @@ A mobile application that can help healthcare professionals track and accurately
 
 - [Installation](#installation)
 
-- [Usage](#usage)
-
 - [License](#license)
 
 - [Contributing](#contributing)
-
-- [Tests](#tests)
 
 - [Future Additions](#future)
 
