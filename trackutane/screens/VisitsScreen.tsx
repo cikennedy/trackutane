@@ -11,15 +11,15 @@ import {
 import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
 import { TabStackParamList } from "../navigator/TabNavigator";
 
-export type PatientScreenNavigationProp = CompositeNavigationProp<
-  BottomTabNavigationProp<TabStackParamList, "Patients">,
+export type VisitScreenNavigationProp = CompositeNavigationProp<
+  BottomTabNavigationProp<TabStackParamList, "Visits">,
   NativeStackNavigationProp<RootStackParamList>
 >;
 
 const VisitsScreen = () => {
   const tailwind = useTailwind();
 
-  const navigation = useNavigation<PatientScreenNavigationProp>();
+  const navigation = useNavigation<VisitScreenNavigationProp>();
 
   // useLayoutEffect(() => {
   //   navigation.setOptions({
