@@ -38,8 +38,16 @@
   width: 100%
 }
 
+.rounded-lg {
+  border-radius: 0.5rem
+}
+
 .border {
   border-width: 1px
+}
+
+.p-5 {
+  padding: 1.25rem
 }
 
 .px-10 {
