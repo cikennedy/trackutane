@@ -36,9 +36,9 @@ const PatientCard = ({ email, name, userId }: Props) => {
               {/* patient image here? otherwise render icon */}
               <Icon
                 style={tailwind("mb-5 ml-auto")}
-                name=""
-                type="font-awesome"
-                color=""
+                name="person"
+                type="ionicon"
+                color="#59C1CC"
                 size={50}
               />
             </View>

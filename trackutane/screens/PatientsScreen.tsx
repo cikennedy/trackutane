@@ -34,7 +34,7 @@ const PatientsScreen = () => {
   //   }, []);
 
   return (
-    <ScrollView>
+    <ScrollView style={{ backgroundColor: "#59C1CC" }}>
       <Image
         source={{
           uri: "https://github.com/cikennedy/trackutane-typescript/blob/main/trackutane/assets/undraw_medical_care_movn.png?raw=true",
