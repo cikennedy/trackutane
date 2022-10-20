@@ -28,7 +28,7 @@ const PatientCard = ({ email, name, userId }: Props) => {
           </View>
 
           <View>
-            {/* put most recent visit here instead of amount of visits */}
+            {/* put most recent visit here instead of amount of visits? */}
             <Text>{loading ? "loading..." : `${visits.length} visits`}</Text>
             {/* patient image here? otherwise render icon */}
             <Icon
