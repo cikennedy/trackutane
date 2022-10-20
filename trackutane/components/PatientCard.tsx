@@ -21,25 +21,27 @@ const PatientCard = ({ email, name, userId }: Props) => {
     <TouchableOpacity>
       <Card containerStyle={[tailwind("p-5 rounded-lg"), { color: "gray" }]}>
         <View>
-          <View>
-            <Text style={tailwind("text-2xl font-bold")}>{name}</Text>
-            <Text style={[tailwind("text-sm"), { color: "black" }]}>
-              Phone:{" "}
-            </Text>
-            <Text>Email: {email}</Text>
-          </View>
+          <View style={tailwind("flex-row justify-between")}>
+            <View>
+              <Text style={tailwind("text-2xl font-bold")}>{name}</Text>
+              <Text style={[tailwind("text-sm"), { color: "black" }]}>
+                Phone:{" "}
+              </Text>
+              <Text>Email: {email}</Text>
+            </View>
 
-          <View>
-            {/* put most recent visit here instead of amount of visits? Days since last visit? */}
-            <Text>{loading ? "loading..." : `${visits.length} visits`}</Text>
-            {/* patient image here? otherwise render icon */}
-            <Icon
-              style={tailwind("mb-5 ml-auto")}
-              name=""
-              type="font-awesome"
-              color=""
-              size={50}
-            />
+            <View>
+              {/* put most recent visit here instead of amount of visits? Days since last visit? */}
+              <Text>{loading ? "loading..." : `${visits.length} visits`}</Text>
+              {/* patient image here? otherwise render icon */}
+              <Icon
+                style={tailwind("mb-5 ml-auto")}
+                name=""
+                type="font-awesome"
+                color=""
+                size={50}
+              />
+            </View>
           </View>
         </View>
         <Card.Divider />
