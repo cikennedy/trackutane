@@ -34,7 +34,7 @@ const PatientCard = ({ email, name, userId }: Props) => {
             <Icon
               style={tailwind("mb-5 ml-auto")}
               name=""
-              type=""
+              type="font-awesome"
               color=""
               size={50}
             />
