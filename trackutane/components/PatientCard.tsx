@@ -19,11 +19,13 @@ const PatientCard = ({ email, name, userId }: Props) => {
 
   return (
     <TouchableOpacity>
-      <Card containerStyle={tailwind("p-5 rounded-lg")}>
+      <Card containerStyle={[tailwind("p-5 rounded-lg"), { color: "gray" }]}>
         <View>
           <View>
-            <Text>{name}</Text>
-            <Text>Phone: </Text>
+            <Text style={tailwind("text-2xl font-bold")}>{name}</Text>
+            <Text style={[tailwind("text-sm"), { color: "black" }]}>
+              Phone:{" "}
+            </Text>
             <Text>Email: {email}</Text>
           </View>
 
