@@ -28,7 +28,7 @@ const PatientCard = ({ email, name, userId }: Props) => {
           </View>
 
           <View>
-            {/* put most recent visit here instead of amount of visits? */}
+            {/* put most recent visit here instead of amount of visits? Days since last visit? */}
             <Text>{loading ? "loading..." : `${visits.length} visits`}</Text>
             {/* patient image here? otherwise render icon */}
             <Icon
@@ -40,6 +40,9 @@ const PatientCard = ({ email, name, userId }: Props) => {
             />
           </View>
         </View>
+        <Card.Divider />
+        {/* include next visit date here */}
+        <Text>Next Visit Date: </Text>
       </Card>
     </TouchableOpacity>
   );
