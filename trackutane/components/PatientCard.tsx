@@ -18,7 +18,11 @@ const PatientCard = ({ email, name, userId }: Props) => {
   const navigation = useNavigation<PatientScreenNavigationProp>();
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity
+      onPress={() =>
+        navigation.navigate("MyModal", { name: name, userId: userId })
+      }
+    >
       <Card containerStyle={[tailwind("p-5 rounded-lg"), { color: "gray" }]}>
         <View>
           <View style={tailwind("flex-row justify-between")}>
