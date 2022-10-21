@@ -4,7 +4,9 @@ import { Icon } from "@rneui/themed";
 import { useTailwind } from "tailwind-rn/dist";
 import {
   CompositeNavigationProp,
+  RouteProp,
   useNavigation,
+  useRoute,
 } from "@react-navigation/native";
 import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
 import { TabStackParamList } from "../navigator/TabNavigator";
@@ -16,9 +18,14 @@ type ModalScreenNavigationProp = CompositeNavigationProp<
   NativeStackNavigationProp<RootStackParamList, "MyModal">
 >;
 
+type ModalScreenRouteProp = RouteProp<RootStackParamList, "MyModal">;
+
 const ModalScreen = () => {
   const tailwind = useTailwind();
   const navigation = useNavigation<ModalScreenNavigationProp>();
+  const {
+    params: { name, userId },
+  } = useRoute<ModalScreenRouteProp>();
 
   return (
     <View>
@@ -28,6 +35,13 @@ const ModalScreen = () => {
       >
         <Icon name="closecircle" type="antdesign" />
       </TouchableOpacity>
+
+      <View>
+        <View>
+          <Text>Name: </Text>
+          <Text>Visits: </Text>
+        </View>
+      </View>
     </View>
   );
 };
