@@ -18,11 +18,14 @@ type ModalScreenNavigationProp = CompositeNavigationProp<
 
 const ModalScreen = () => {
   const tailwind = useTailwind();
-  const navigation = useNavigation();
+  const navigation = useNavigation<ModalScreenNavigationProp>();
 
   return (
     <View>
-      <TouchableOpacity style={tailwind("absolute right-5 top-5 z-10")}>
+      <TouchableOpacity
+        onPress={navigation.goBack}
+        style={tailwind("absolute right-5 top-5 z-10")}
+      >
         <Icon name="closecircle" type="antdesign" />
       </TouchableOpacity>
     </View>
