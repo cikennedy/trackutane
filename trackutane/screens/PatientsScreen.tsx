@@ -50,11 +50,11 @@ const PatientsScreen = () => {
         containerStyle={tailwind("pt-5 pb-0 px-10")}
       />
 
-      {data?.getPatients.map(
-        ({ name: ID, value: { email, name } }: PatientResponse) => (
+      {data?.getPatients
+        ?.filter((patient: PatientList) => patient.value.name.includes(input))
+        .map(({ name: ID, value: { email, name } }: PatientResponse) => (
           <PatientCard key={ID} email={email} name={name} userId={ID} />
-        )
-      )}
+        ))}
     </ScrollView>
   );
 };
