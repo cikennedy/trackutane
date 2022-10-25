@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { useTailwind } from "tailwind-rn/dist";
-import { Card, Icon } from "@rneui/themed";
+import { Card, Divider, Icon } from "@rneui/themed";
 
 type Props = {
   visit: Visit;
@@ -36,7 +36,14 @@ const VisitCard = ({ visit }: Props) => {
           >
             {visit.provider}
           </Text>
-          <Text>Date: {new Date(visit.date).toLocaleDateString()}</Text>
+          <Text style={tailwind("text-white text-center text-lg font-bold")}>
+            Date: {new Date(visit.date).toLocaleDateString()}
+          </Text>
+          {/* TO-DO Create time field for visits */}
+          <Text style={tailwind("text-white text-center text-lg font-bold")}>
+            Time: {"Insert Time Here"}
+          </Text>
+          <Divider color="white" />
         </View>
       </View>
     </Card>
