@@ -40,14 +40,24 @@ const ModalScreen = () => {
         <Icon name="closecircle" type="antdesign" />
       </TouchableOpacity>
 
-      <View>
-        <View>
-          <Text>Name: </Text>
-          <Text>Visits: </Text>
+      <View style={{ marginTop: 10 }}>
+        <View style={[tailwind("py-5 border-b"), { borderColor: "#59C1CC" }]}>
+          <Text
+            style={[
+              tailwind("text-center text-xl font-bold"),
+              { color: "#59C1CC" },
+            ]}
+          >
+            Name:{" "}
+          </Text>
+          <Text style={[tailwind("text-center text-sm"), { color: "#59C1CC" }]}>
+            Visits:{" "}
+          </Text>
         </View>
       </View>
 
       <FlatList
+        contentContainerStyle={{ paddingBottom: 200 }}
         data={visits}
         keyExtractor={(visit) => visit.date}
         renderItem={({ item: visit }) => <VisitCard visit={visit} />}

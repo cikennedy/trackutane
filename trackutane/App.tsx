@@ -19,9 +19,11 @@ export default function App() {
     // only time to do ts-ignore!
     // @ts-ignore - TailwindProvider is missing a type definition
     <TailwindProvider utilities={utilities}>
-      <NavigationContainer>
-        <RootNavigator />
-      </NavigationContainer>
+      <ApolloProvider client={client}>
+        <NavigationContainer>
+          <RootNavigator />
+        </NavigationContainer>
+      </ApolloProvider>
     </TailwindProvider>
   );
 }
