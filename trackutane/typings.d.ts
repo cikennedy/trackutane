@@ -14,6 +14,7 @@ type PatientList = {
 };
 
 type Visit = {
+  provider: string;
   date: string;
   visitDosage: number;
   cumulativeDosage: number;

@@ -15,6 +15,7 @@ const VisitCard = ({ visit }: Props) => {
       containerStyle={[
         tailwind("rounded-lg my-2"),
         {
+          backgroundColor: "#59C1CC",
           padding: 0,
           paddingTop: 16,
           shadowColor: "black",
@@ -25,7 +26,13 @@ const VisitCard = ({ visit }: Props) => {
       ]}
     >
       <View>
-        <Icon name="calendar" type="entypo" color="black" />
+        <Icon name="calendar" type="entypo" color="white" />
+
+        <View>
+          <Text>
+            {visit.provider} - {visit.date}
+          </Text>
+        </View>
       </View>
     </Card>
   );

@@ -1,4 +1,5 @@
 type Visit {
+  provider: String
   date: Date
   visitDosage: Int
   cumulativeDosage: Int
