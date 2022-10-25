@@ -1,5 +1,5 @@
 type Patient = {
-  dateAdded: Date;
+  dateAdded: date;
   name: string;
   address: string;
   city: string;
@@ -15,11 +15,11 @@ type PatientList = {
 
 type Visit = {
   provider: string;
-  date: string;
+  date: date;
   visitDosage: number;
   cumulativeDosage: number;
-  nextVisit: string;
-  followUp: string;
+  nextVisit: date;
+  notes: string;
 };
 
 type VisitResponse = {

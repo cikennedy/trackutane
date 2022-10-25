@@ -29,9 +29,14 @@ const VisitCard = ({ visit }: Props) => {
         <Icon name="calendar" type="entypo" color="white" />
 
         <View>
-          <Text>
-            {visit.provider} - {visit.date}
+          <Text
+            style={tailwind(
+              "text-xs text-center uppercase text-white font-bold"
+            )}
+          >
+            {visit.provider}
           </Text>
+          <Text>Date: {new Date(visit.date).toLocaleDateString()}</Text>
         </View>
       </View>
     </Card>
