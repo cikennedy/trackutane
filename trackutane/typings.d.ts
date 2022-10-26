@@ -23,7 +23,7 @@ type PatientList = {
   value: Patient;
 };
 
-type TrackingDetail = {
+type Tracking = {
   patient_id: ID;
   patient: Patient;
   visitDetails: VisitDetails[];
@@ -42,7 +42,7 @@ type Visit = {
   date: string;
   provider: string;
   visitId: number;
-  tracking: TrackingDetail;
+  tracking: Tracking;
 };
 
 type VisitResponse = {

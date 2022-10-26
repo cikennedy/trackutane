@@ -16,7 +16,6 @@ const usePatientVisits = (userId: string) => {
       tracking: value.tracking,
     }));
 
-    // tracking details?
     const patientVisits = visits.filter((visit) => visit.tracking.patient_id);
   }, [data]);
 
