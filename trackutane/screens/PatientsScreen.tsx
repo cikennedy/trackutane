@@ -47,16 +47,27 @@ const PatientsScreen = () => {
         placeholder="Search by Patient"
         value={input}
         onChangeText={(text) => setInput(text)}
-        containerStyle={tailwind("pt-5 pb-0 px-10")}
+        containerStyle={tailwind("pt-5 pb-0 px-10 bg-white")}
       />
 
       {data?.getPatients
         ?.filter((patient: PatientList) =>
           patient.value.lastName.includes(input)
         )
-        .map(({ name: ID, value: { email, lastName } }: PatientResponse) => (
-          <PatientCard key={ID} email={email} name={lastName} userId={ID} />
-        ))}
+        .map(
+          ({
+            name: ID,
+            value: { email, firstName, lastName },
+          }: PatientResponse) => (
+            <PatientCard
+              key={ID}
+              email={email}
+              firstName={firstName}
+              lastName={lastName}
+              userId={ID}
+            />
+          )
+        )}
     </ScrollView>
   );
 };

@@ -63,7 +63,7 @@ const VisitsScreen = () => {
             }
           })
           .map((visit) => (
-            <TrackingCard key={visit.cumulativeDosage} item={visit} />
+            <TrackingCard key={visit.visitId} item={visit} />
           ))}
       </View>
     </ScrollView>

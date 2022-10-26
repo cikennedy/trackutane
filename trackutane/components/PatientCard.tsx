@@ -8,11 +8,12 @@ import { PatientScreenNavigationProp } from "../screens/PatientsScreen";
 
 type Props = {
   userId: string;
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
 };
 
-const PatientCard = ({ email, name, userId }: Props) => {
+const PatientCard = ({ email, firstName, lastName, userId }: Props) => {
   const tailwind = useTailwind();
   const { loading, error, visits } = usePatientVisits(userId);
   const navigation = useNavigation<PatientScreenNavigationProp>();
@@ -20,14 +21,16 @@ const PatientCard = ({ email, name, userId }: Props) => {
   return (
     <TouchableOpacity
       onPress={() =>
-        navigation.navigate("MyModal", { name: name, userId: userId })
+        navigation.navigate("MyModal", { name: firstName, userId: userId })
       }
     >
       <Card containerStyle={[tailwind("p-5 rounded-lg"), { color: "gray" }]}>
         <View>
           <View style={tailwind("flex-row justify-between")}>
             <View>
-              <Text style={tailwind("text-2xl font-bold")}>{name}</Text>
+              <Text style={tailwind("text-2xl font-bold")}>
+                {lastName + "," + " " + firstName}
+              </Text>
               <Text style={[tailwind("text-sm"), { color: "black" }]}>
                 Phone:{" "}
               </Text>
