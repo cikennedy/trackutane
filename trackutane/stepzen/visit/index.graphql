@@ -18,5 +18,6 @@ type Query {
   getVisits: [VisitList]
     @rest(
       endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/visits.json"
+      transforms: [{ pathpattern: [], editor: "objectToArray" }]
     )
 }
