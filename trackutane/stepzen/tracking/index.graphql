@@ -11,9 +11,20 @@ type VisitDetails {
   visitDosage: Int
 }
 
+type TrackingList {
+  name: ID
+  value: Tracking
+}
+
 type Query {
   getTrackingById(id: ID!): Tracking
     @rest(
       endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/tracking/$id.json"
+    )
+
+  getTrackingList: [TrackingList]
+    @rest(
+      endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/tracking.json"
+      transforms: [{ pathpattern: [], editor: "objectToArray" }]
     )
 }
