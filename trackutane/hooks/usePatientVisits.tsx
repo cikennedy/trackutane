@@ -14,7 +14,7 @@ const usePatientVisits = (userId: string) => {
       visitDosage: value.visitDosage,
       cumulativeDosage: value.cumulativeDosage,
       nextVisit: value.nextVisit,
-      followUp: value.followUp,
+      followUp: value.nextVisit,
     }));
 
     // TO-DO! patient id and follow ups

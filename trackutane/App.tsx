@@ -10,7 +10,7 @@ import {
 } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "http://localhost:5001/api/eyewitness-ibis",
+  uri: "http://localhost:5001/api/erstwhile-nightingale",
   cache: new InMemoryCache(),
 });
 

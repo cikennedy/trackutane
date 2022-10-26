@@ -23,13 +23,26 @@ type PatientList = {
   value: Patient;
 };
 
-type Visit = {
-  provider: string;
-  date: date;
+type TrackingDetail = {
+  patient_id: ID;
+  patient: Patient;
+  visitDetails: VisitDetail[];
+};
+
+type VisitDetail = {
   visitDosage: number;
   cumulativeDosage: number;
-  nextVisit: date;
   notes: string;
+  cptCode: number;
+  billing: number;
+  nextVisit: string;
+};
+
+type Visit = {
+  date: string;
+  provider: string;
+  visitId: number;
+  tracking: number;
 };
 
 type VisitResponse = {
