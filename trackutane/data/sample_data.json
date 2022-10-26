@@ -11,6 +11,9 @@
         "zipCode": "60607",
         "phone": "555-555-5555",
         "email": "lucas.johnson@example.com",
+        "birthDate": "10/09/1957",
+        "insuranceFront": "img",
+        "insuranceBack": "img",
         "insuranceProvider": "BCBS",
         "memberID": "5555555",
         "group": "IB5555",
@@ -27,6 +30,9 @@
         "zipCode": "40299",
         "phone": "555-555-5555",
         "email": "jarrell2007@yahoo.com",
+        "birthDate": "10/09/1957",
+        "insuranceFront": "img",
+        "insuranceBack": "img",
         "insuranceProvider": "BCBS",
         "memberID": "5555555",
         "group": "IB5555",
@@ -43,6 +49,9 @@
         "zipCode": "60607",
         "phone": "555-555-5555",
         "email": "lucas.johnson@example.com",
+        "birthDate": "10/09/1957",
+        "insuranceFront": "img",
+        "insuranceBack": "img",
         "insuranceProvider": "BCBS",
         "memberID": "5555555",
         "group": "IB5555",
@@ -59,6 +68,9 @@
         "zipCode": "60607",
         "phone": "555-555-5555",
         "email": "lucas.johnson@example.com",
+        "birthDate": "10/09/1957",
+        "insuranceFront": "img",
+        "insuranceBack": "img",
         "insuranceProvider": "BCBS",
         "memberID": "5555555",
         "group": "IB5555",
@@ -75,6 +87,9 @@
         "zipCode": "60607",
         "phone": "555-555-5555",
         "email": "lucas.johnson@example.com",
+        "birthDate": "10/09/1957",
+        "insuranceFront": "img",
+        "insuranceBack": "img",
         "insuranceProvider": "BCBS",
         "memberID": "5555555",
         "group": "IB5555",
@@ -85,36 +100,27 @@
       "092024": {
         "visitId": "000005",
         "date": "2022-08-04",
-        "provider": "Dr. Roberta Gomez",
-        "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
-        "nextVisit": "2022-09-05"
+        "provider": "Dr. Roberta Gomez"
       },
       "991458": {
         "visitId": "000004",
         "date": "2022-08-04",
-        "provider": "Dr. Roberta Gomez",
-        "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
-        "nextVisit": "2022-09-05"
+        "provider": "Dr. Roberta Gomez"
       },
       "745251": {
         "visitId": "000003",
         "date": "2022-08-04",
-        "provider": "Dr. Roberta Gomez",
-        "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
-        "nextVisit": "2022-09-05"
+        "provider": "Dr. Roberta Gomez"
       },
       "389877": {
         "visitId": "000002",
         "date": "2022-08-04",
-        "provider": "Dr. Roberta Gomez",
-        "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
-        "nextVisit": "2022-09-05"
+        "provider": "Dr. Roberta Gomez"
       },
       "183289": {
         "visitId": "000001",
         "date": "2022-08-04",
-        "provider": "Dr. Roberta Gomez",
-        "nextVisit": "2022-09-05"
+        "provider": "Dr. Roberta Gomez"
       }
     }, "tracking": {
       "000001": {
@@ -124,7 +130,8 @@
             "cumulativeDosage": 100,
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
-            "billing": "100.00"
+            "billing": "100.00",
+            "nextVisit": "2022-09-05"
           }
         ],
         "patient_id": "183289"
@@ -136,7 +143,8 @@
             "cumulativeDosage": 100,
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
-            "billing": "100.00"
+            "billing": "100.00",
+            "nextVisit": "2022-09-05"
           }
         ],
         "patient_id": "389877"
@@ -148,7 +156,8 @@
             "cumulativeDosage": 100,
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
-            "billing": "100.00"
+            "billing": "100.00",
+            "nextVisit": "2022-09-05"
           }
         ],
         "patient_id": "745251"
@@ -160,7 +169,8 @@
             "cumulativeDosage": 100,
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
-            "billing": "100.00"
+            "billing": "100.00",
+            "nextVisit": "2022-09-05"
           }
         ],
         "patient_id": "991458"
@@ -172,7 +182,8 @@
             "cumulativeDosage": 100,
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
-            "billing": "100.00"
+            "billing": "100.00",
+            "nextVisit": "2022-09-05"
           }
         ],
         "patient_id": "092024"

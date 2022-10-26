@@ -47,6 +47,8 @@ Contact me via email if you are interested in contribution to this project.
 To be added in the future:
 
 - Type definition files
+- Sign in, authentication for providers
+- Patient medical/prescription history, pharmacy used, etc. which is separate from the administrative information
 
 Expansion:
 
