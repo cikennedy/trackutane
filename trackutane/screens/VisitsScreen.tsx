@@ -1,7 +1,7 @@
 import { ActivityIndicator, ScrollView } from "react-native";
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { useTailwind } from "tailwind-rn";
-import { Image } from "@rneui/themed";
+import { Image, Text } from "@rneui/themed";
 import { RootStackParamList } from "../navigator/RootNavigator";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import {
@@ -10,6 +10,7 @@ import {
 } from "@react-navigation/native";
 import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
 import { TabStackParamList } from "../navigator/TabNavigator";
+import useVisits from "../hooks/useVisits";
 
 export type VisitScreenNavigationProp = CompositeNavigationProp<
   BottomTabNavigationProp<TabStackParamList, "Visits">,
@@ -18,14 +19,19 @@ export type VisitScreenNavigationProp = CompositeNavigationProp<
 
 const VisitsScreen = () => {
   const tailwind = useTailwind();
-
   const navigation = useNavigation<VisitScreenNavigationProp>();
+  const { loading, error, visits } = useVisits();
+  const [ascending, setAscending] = useState<boolean>(false);
 
-  // useLayoutEffect(() => {
-  //   navigation.setOptions({
-  //     headerShown: false,
-  //   });
-  // }, []);
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      tabBarLabel: ({ focused, color }) => (
+        <Text style={{ color: focused ? "#EB6A7C" : color, fontSize: 10 }}>
+          Visits
+        </Text>
+      ),
+    });
+  }, []);
 
   return (
     <ScrollView>

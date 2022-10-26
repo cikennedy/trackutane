@@ -46,7 +46,7 @@ const VisitCard = ({ visit }: Props) => {
           <Divider color="white" />
         </View>
 
-        <View style={tailwind("mx-auto")}>
+        <View style={tailwind("mx-auto pb-5")}>
           <Text style={tailwind("text-center text-white font-bold mt-5")}>
             Visit Notes:
           </Text>
