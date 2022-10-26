@@ -1,0 +1,19 @@
+type Tracking {
+  patient_id: Int
+  visitDetails: [VisitDetails]
+}
+type VisitDetails {
+  billing: Float
+  cptCode: Int
+  cumulativeDosage: Int
+  nextVisit: Date
+  notes: String
+  visitDosage: Int
+}
+
+type Query {
+  getTrackingById(id: ID!): Tracking
+    @rest(
+      endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/tracking/$id.json"
+    )
+}

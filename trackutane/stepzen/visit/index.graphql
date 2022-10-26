@@ -1,21 +1,22 @@
 type Visit {
-  visitId: Int
   date: Date
   provider: String
-  nextVisit: Date
+  visitId: Int
+  tracking: Tracking
+    @materializer(
+      query: "getTrackingById"
+      arguments: [{ name: "id", field: "visitId" }]
+    )
 }
 
-type Tracking {
-  visitDosage: Int
-  cumulativeDosage: Int
-  notes: String
-  cptCode: String
-  billing: String
+type VisitList {
+  name: ID
+  value: Visit
 }
 
 type Query {
-  getVisits: JSON
+  getVisits: [VisitList]
     @rest(
-      endpoint: "https://trackutane-default-rtdb.firebaseio.com/visits.json"
+      endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/visits.json"
     )
 }

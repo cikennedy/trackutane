@@ -1,26 +1,6 @@
-type Patient {
-  dateAdded: Date
-  firstName: String
-  lastName: String
-  address: String
-  address2: String
-  city: String
-  state: String
-  zipCode: Int
-  phone: String
-  email: String
-  insuranceProvider: String
-  memberID: String
-  group: String
-  effectiveDate: Date
-}
-
 type Query {
-  """
-  Result typed as JSON since it has fields ["-N6rOmxa7vOOTpZZSllL", "-N6rQgCkbLPB1xElUchT", "-N6rSJ4xI3_Cq7u58Wh_", "-N6rSZB4AoMAwrDnm2jF", "-N6rTRzW_JrkHQMdt5QA"] that are invalid graphql identifiers
-  """
   getPatients: JSON
     @rest(
-      endpoint: "https://trackutane-default-rtdb.firebaseio.com/patients.json"
+      endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/patients.json"
     )
 }
