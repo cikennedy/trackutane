@@ -1,6 +1,11 @@
 type Tracking {
   patient_id: Int
   visitDetails: [VisitDetails]
+  patient: Patient
+    @materializer(
+      query: "getPatientbyId"
+      arguments: [{ name: "id", field: "patient_id" }]
+    )
 }
 type VisitDetails {
   billing: Float

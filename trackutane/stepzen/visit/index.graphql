@@ -15,6 +15,11 @@ type VisitList {
 }
 
 type Query {
+  getVisitById(id: ID!): Visit
+    @rest(
+      endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/visits/$id.json"
+    )
+
   getVisits: [VisitList]
     @rest(
       endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/visits.json"

@@ -1,6 +1,37 @@
+type Patient {
+  address: String
+  address2: String
+  birthDate: String
+  city: String
+  dateAdded: String
+  effectiveDate: String
+  email: String
+  firstName: String
+  group: String
+  insuranceBack: String
+  insuranceFront: String
+  insuranceProvider: String
+  lastName: String
+  memberID: Int
+  phone: String
+  state: String
+  zipCode: Int
+}
+
+type PatientList {
+  name: ID
+  value: Patient
+}
+
 type Query {
-  getPatients: JSON
+  getPatientbyId(id: ID!): Patient
+    @rest(
+      endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/patients/$id.json"
+    )
+
+  getPatients: [PatientList]
     @rest(
       endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/patients.json"
+      transforms: [{ pathpattern: [], editor: "objectToArray" }]
     )
 }
