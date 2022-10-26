@@ -4,6 +4,8 @@ import PatientsScreen from "../screens/PatientsScreen";
 import VisitsScreen from "../screens/VisitsScreen";
 import { useNavigation } from "@react-navigation/native";
 import { Icon } from "@rneui/themed";
+import { Image } from "@rneui/themed";
+import { Text, View } from "react-native";
 
 export type TabStackParamList = {
   Patients: undefined;
@@ -30,19 +32,25 @@ const TabNavigator = () => {
         tabBarIcon: ({ focused, color, size }) => {
           if (route.name === "Patients") {
             return (
-              <Icon
-                name="users"
-                type="entypo"
-                color={focused ? "#59C1CC" : "gray"}
-              />
+              <View>
+                <Text>Hello</Text>
+              </View>
+              // <Icon
+              //   name="users"
+              //   type="entypo"
+              //   color={focused ? "#59C1CC" : "gray"}
+              // />
             );
           } else if (route.name === "Visits") {
             return (
-              <Icon
-                name="calendar"
-                type="entypo"
-                color={focused ? "red" : "gray"}
-              />
+              <View>
+                <Text>Hello</Text>
+              </View>
+              // <Icon
+              //   name="calendar"
+              //   type="entypo"
+              //   color={focused ? "red" : "gray"}
+              // />
             );
           }
         },
