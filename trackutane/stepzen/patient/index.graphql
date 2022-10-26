@@ -1,11 +1,18 @@
 type Patient {
   dateAdded: Date
-  name: String
+  firstName: String
+  lastName: String
   address: String
+  address2: String
   city: String
+  state: String
   zipCode: Int
   phone: String
   email: String
+  insuranceProvider: String
+  memberID: String
+  group: String
+  effectiveDate: Date
 }
 
 type Query {

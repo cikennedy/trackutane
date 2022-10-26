@@ -1,61 +1,181 @@
 {
     "patients": {
-      "-N6rOmxa7vOOTpZZSllL": {
-        "email": "lucas.bill@example.com",
-        "name": "Lucas Bill",
-        "Address": "West Loop",
-        "City": "Chicago"
+      "183289": {
+        "dateAdded": "09/26/2022",
+        "firstName": "Lucas",
+        "lastName": "Johnson",
+        "address": "3446 Jadewood Drive",
+        "address2": "Unit 2",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60607",
+        "phone": "555-555-5555",
+        "email": "lucas.johnson@example.com",
+        "insuranceProvider": "BCBS",
+        "memberID": "5555555",
+        "group": "IB5555",
+        "effectiveDate": "01/01/2022"
       },
-      "-N6rQgCkbLPB1xElUchT": {
-        "email": "mandy.jones@example.com",
-        "name": "Mandy Jones",
-        "Address": "Brooklyn",
-        "City": "New York"
+      "389877": {
+        "dateAdded": "02/04/2020",
+        "firstName": "Cody",
+        "lastName": "Woodson",
+        "address": "1752 Cerullo Road",
+        "address2": "",
+        "city": "Louisville",
+        "state": "KY",
+        "zipCode": "40299",
+        "phone": "555-555-5555",
+        "email": "jarrell2007@yahoo.com",
+        "insuranceProvider": "BCBS",
+        "memberID": "5555555",
+        "group": "IB5555",
+        "effectiveDate": "01/01/2022"
       },
-      "-N6rSJ4xI3_Cq7u58Wh_": {
-        "email": "salim.ali@example.com",
-        "name": "Salim Ali",
-        "Address": "Union Square",
-        "City": "San Fracisco"
+      "745251": {
+        "dateAdded": "09/26/2022",
+        "firstName": "Lucas",
+        "lastName": "Johnson",
+        "address": "3446 Jadewood Drive",
+        "address2": "Unit 2",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60607",
+        "phone": "555-555-5555",
+        "email": "lucas.johnson@example.com",
+        "insuranceProvider": "BCBS",
+        "memberID": "5555555",
+        "group": "IB5555",
+        "effectiveDate": "01/01/2022"
       },
-      "-N6rSZB4AoMAwrDnm2jF": {
-        "email": "jane.xiu@example.com",
-        "name": "Jane Xiu",
-        "Address": "39 Long Beach",
-        "City": "Los Angeles"
+      "991458": {
+        "dateAdded": "09/26/2022",
+        "firstName": "Lucas",
+        "lastName": "Johnson",
+        "address": "3446 Jadewood Drive",
+        "address2": "Unit 2",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60607",
+        "phone": "555-555-5555",
+        "email": "lucas.johnson@example.com",
+        "insuranceProvider": "BCBS",
+        "memberID": "5555555",
+        "group": "IB5555",
+        "effectiveDate": "01/01/2022"
       },
-      "-N6rTRzW_JrkHQMdt5QA": {
-        "email": "john.doe@example.com",
-        "name": "John Doe",
-        "Address": "123 Main St",
-        "City": "San Francisco"
+      "092024": {
+        "dateAdded": "09/26/2022",
+        "firstName": "Lucas",
+        "lastName": "Johnson",
+        "address": "3446 Jadewood Drive",
+        "address2": "Unit 2",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60607",
+        "phone": "555-555-5555",
+        "email": "lucas.johnson@example.com",
+        "insuranceProvider": "BCBS",
+        "memberID": "5555555",
+        "group": "IB5555",
+        "effectiveDate": "01/01/2022"
       }
     },
     "visits": {
-      "-N6rOvLXK2t39x-Bp0UP": {
-        "visitDosage": 30,
-        "cumulativeDosage": 100,
-        "date": "2022-08-04"
+      "092024": {
+        "visitId": "000005",
+        "date": "2022-08-04",
+        "provider": "Dr. Roberta Gomez",
+        "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+        "nextVisit": "2022-09-05"
       },
-      "-N6rQ_YDMNTjq_mCbhZN": {
-        "visitDosage": 30,
-        "cumulativeDosage": 100,
-        "date": "2022-08-01"
+      "991458": {
+        "visitId": "000004",
+        "date": "2022-08-04",
+        "provider": "Dr. Roberta Gomez",
+        "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+        "nextVisit": "2022-09-05"
       },
-      "-N6rQsEqX4vt-0cBA336": {
-        "visitDosage": 30,
-        "cumulativeDosage": 100,
-        "date": "2022-08-04"
+      "745251": {
+        "visitId": "000003",
+        "date": "2022-08-04",
+        "provider": "Dr. Roberta Gomez",
+        "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+        "nextVisit": "2022-09-05"
       },
-      "-N6rQvnBSkz2kglMvr5H": {
-        "visitDosage": 30,
-        "cumulativeDosage": 100,
-        "date": "2022-08-01"
+      "389877": {
+        "visitId": "000002",
+        "date": "2022-08-04",
+        "provider": "Dr. Roberta Gomez",
+        "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+        "nextVisit": "2022-09-05"
       },
-      "-N6rSQz62DlXFPbd32CD": {
-        "visitDosage": 30,
-        "cumulativeDosage": 100,
-        "date": "2022-08-01"
+      "183289": {
+        "visitId": "000001",
+        "date": "2022-08-04",
+        "provider": "Dr. Roberta Gomez",
+        "nextVisit": "2022-09-05"
+      }
+    }, "tracking": {
+      "000001": {
+        "visitDetails": [
+          {
+            "visitDosage": 30,
+            "cumulativeDosage": 100,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00"
+          }
+        ],
+        "patient_id": "183289"
+      },
+      "000002": {
+        "visitDetails": [
+          {
+            "visitDosage": 30,
+            "cumulativeDosage": 100,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00"
+          }
+        ],
+        "patient_id": "389877"
+      },
+      "000003": {
+        "visitDetails": [
+          {
+            "visitDosage": 30,
+            "cumulativeDosage": 100,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00"
+          }
+        ],
+        "patient_id": "745251"
+      },
+      "000004": {
+        "visitDetails": [
+          {
+            "visitDosage": 30,
+            "cumulativeDosage": 100,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00"
+          }
+        ],
+        "patient_id": "991458"
+      },
+      "000005": {
+        "visitDetails": [
+          {
+            "visitDosage": 30,
+            "cumulativeDosage": 100,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00"
+          }
+        ],
+        "patient_id": "092024"
       }
     }
   }

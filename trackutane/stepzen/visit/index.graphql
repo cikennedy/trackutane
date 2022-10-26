@@ -1,9 +1,16 @@
 type Visit {
-  provider: String
+  visitId: Int
   date: Date
+  provider: String
+  nextVisit: Date
+}
+
+type Tracking {
   visitDosage: Int
   cumulativeDosage: Int
-  nextVisit: Date
+  notes: String
+  cptCode: String
+  billing: String
 }
 
 type Query {
