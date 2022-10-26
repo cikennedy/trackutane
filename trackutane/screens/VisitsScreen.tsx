@@ -1,7 +1,7 @@
-import { ActivityIndicator, ScrollView } from "react-native";
+import { ActivityIndicator, ScrollView, View } from "react-native";
 import React, { useLayoutEffect, useState } from "react";
 import { useTailwind } from "tailwind-rn";
-import { Image, Text } from "@rneui/themed";
+import { Button, Image, Text } from "@rneui/themed";
 import { RootStackParamList } from "../navigator/RootNavigator";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import {
@@ -11,6 +11,7 @@ import {
 import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
 import { TabStackParamList } from "../navigator/TabNavigator";
 import useVisits from "../hooks/useVisits";
+import TrackingCard from "../components/TrackingCard";
 
 export type VisitScreenNavigationProp = CompositeNavigationProp<
   BottomTabNavigationProp<TabStackParamList, "Visits">,
@@ -42,6 +43,29 @@ const VisitsScreen = () => {
         containerStyle={tailwind("w-full h-64")}
         PlaceholderContent={<ActivityIndicator />}
       />
+
+      <View>
+        <Button
+          color="#EB6A7C"
+          titleStyle={{ color: "gray", fontWeight: "500" }}
+          style={tailwind("py-2 px-5")}
+          onPress={() => setAscending(!ascending)}
+        >
+          {ascending ? "Oldest First" : "Newest First"}
+        </Button>
+
+        {visits
+          ?.sort((a, b) => {
+            if (ascending) {
+              return new Date(a.date) > new Date(b.date) ? 1 : -1;
+            } else {
+              return new Date(a.date) < new Date(b.date) ? 1 : -1;
+            }
+          })
+          .map((visit) => (
+            <TrackingCard key={visit.cumulativeDosage} item={visit} />
+          ))}
+      </View>
     </ScrollView>
   );
 };
