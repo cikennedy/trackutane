@@ -11,9 +11,12 @@ type VisitDetails {
   billing: Int
   cptCode: Int
   cumulativeDosage: Int
+  goalDosage: Int
+  height: String
   nextVisit: Date
   notes: String
   visitDosage: Int
+  weight: Int
 }
 
 type TrackingList {

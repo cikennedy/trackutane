@@ -41,9 +41,12 @@ export const GET_VISITS = gql`
             billing
             cptCode
             cumulativeDosage
+            height
+            goalDosage
             nextVisit
             notes
             visitDosage
+            weight
           }
           patient {
             address

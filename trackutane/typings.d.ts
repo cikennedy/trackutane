@@ -32,10 +32,13 @@ type Tracking = {
 type VisitDetails = {
   visitDosage: number;
   cumulativeDosage: number;
+  goalDosage: number;
+  height: string;
   notes: string;
   cptCode: number;
   billing: number;
   nextVisit: string;
+  weight: number;
 };
 
 type Visit = {
