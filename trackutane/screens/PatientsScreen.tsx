@@ -51,9 +51,11 @@ const PatientsScreen = () => {
       />
 
       {data?.getPatients
-        ?.filter((patient: PatientList) => patient.value.name.includes(input))
-        .map(({ name: ID, value: { email, name } }: PatientResponse) => (
-          <PatientCard key={ID} email={email} name={name} userId={ID} />
+        ?.filter((patient: PatientList) =>
+          patient.value.lastName.includes(input)
+        )
+        .map(({ name: ID, value: { email, lastName } }: PatientResponse) => (
+          <PatientCard key={ID} email={email} name={lastName} userId={ID} />
         ))}
     </ScrollView>
   );

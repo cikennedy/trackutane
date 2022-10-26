@@ -11,9 +11,9 @@ const useVisits = () => {
 
     const visits: Visit[] = data.getVisits.map(({ value }: VisitResponse) => ({
       date: value.date,
-      visitDosage: value.visitDosage,
-      cumulativeDosage: value.cumulativeDosage,
-      nextVisit: value.nextVisit,
+      provider: value.provider,
+      visitId: value.visitId,
+      tracking: value.tracking,
     }));
 
     setVisits(visits);

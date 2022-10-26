@@ -11,16 +11,13 @@ const usePatientVisits = (userId: string) => {
 
     const visits: Visit[] = data.getVisits.map(({ value }: VisitResponse) => ({
       date: value.date,
-      visitDosage: value.visitDosage,
-      cumulativeDosage: value.cumulativeDosage,
-      nextVisit: value.nextVisit,
-      followUp: value.nextVisit,
+      provider: value.provider,
+      visitId: value.visitId,
+      tracking: value.tracking,
     }));
 
-    // TO-DO! patient id and follow ups
-    // const patientVisits = visits.filter(
-    //   (visit) => visit.followUp.patient_id === userId
-    // );
+    // tracking details?
+    const patientVisits = visits.filter((visit) => visit.tracking.patient_id);
   }, [data]);
 
   return { loading, error, visits };
