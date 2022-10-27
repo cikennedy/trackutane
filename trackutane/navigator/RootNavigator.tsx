@@ -32,6 +32,10 @@ const RootNavigator = () => {
           component={ModalScreen}
         />
       </RootStack.Group>
+
+      <RootStack.Group>
+        <RootStack.Screen name="Visit" component={VisitScreen} />
+      </RootStack.Group>
     </RootStack.Navigator>
   );
 };

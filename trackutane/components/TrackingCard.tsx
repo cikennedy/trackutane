@@ -29,12 +29,12 @@ const TrackingCard = ({ visit }: Props) => {
             <Text>Provider: {visit.provider}</Text>
           </View>
 
-          <View style={tailwind("flex-row items-center")}>
+          {/* <View style={tailwind("flex-row items-center")}>
             <Text style={(tailwind("text-sm"), { color: "#59C1CC" })}>
               {}, {},{" "}
             </Text>
             <Text></Text>
-          </View>
+          </View> */}
         </View>
       </Card>
     </TouchableOpacity>
