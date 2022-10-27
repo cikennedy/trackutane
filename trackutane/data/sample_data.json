@@ -98,32 +98,32 @@
     },
     "visits": {
       "292024": {
-        "visitId": "000005",
+        "visitId": "5",
         "date": "2022-01-08",
         "provider": "Dr. Roberta Gomez"
       },
       "991458": {
-        "visitId": "000004",
+        "visitId": "4",
         "date": "2022-04-07",
         "provider": "Dr. Duane Simmons"
       },
       "745251": {
-        "visitId": "000003",
+        "visitId": "3",
         "date": "2022-03-02",
         "provider": "Kelly Hansen, PA"
       },
       "389877": {
-        "visitId": "000002",
+        "visitId": "2",
         "date": "2022-09-10",
         "provider": "Dr. Duane Simmons"
       },
       "183289": {
-        "visitId": "000001",
+        "visitId": "1",
         "date": "2022-08-08",
         "provider": "Dr. Roberta Gomez"
       }
     }, "tracking": {
-      "000001": {
+      "1": {
         "visitDetails": [
           {
             "visitDosage": 30,
@@ -139,7 +139,7 @@
         ],
         "patient_id": "183289"
       },
-      "000002": {
+      "2": {
         "visitDetails": [
           {
             "visitDosage": 15,
@@ -155,7 +155,7 @@
         ],
         "patient_id": "389877"
       },
-      "000003": {
+      "3": {
         "visitDetails": [
           {
             "visitDosage": 20,
@@ -171,7 +171,7 @@
         ],
         "patient_id": "745251"
       },
-      "000004": {
+      "4": {
         "visitDetails": [
           {
             "visitDosage": 25,
@@ -187,7 +187,7 @@
         ],
         "patient_id": "991458"
       },
-      "000005": {
+      "5": {
         "visitDetails": [
           {
             "visitDosage": 10,

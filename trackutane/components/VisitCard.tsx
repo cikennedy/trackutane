@@ -43,32 +43,32 @@ const VisitCard = ({ visit }: Props) => {
         ]}
       >
         <View>
-          <Icon name="calendar" type="entypo" color="white" />
+          {/* <Icon name="calendar" type="entypo" color="white" /> */}
 
           <View>
             <Text
               style={tailwind(
-                "text-xs text-center uppercase text-white font-bold"
+                "text-xs text-white text-center uppercase font-bold"
               )}
             >
               {visit.provider}
             </Text>
-            <Text style={tailwind("text-white text-center text-lg font-bold")}>
+            <Text style={tailwind("text-center text-white text-lg font-bold")}>
               Date: {new Date(visit.date).toLocaleDateString()}
             </Text>
             {/* TO-DO Create time field for visits */}
-            <Text style={tailwind("text-white text-center text-lg font-bold")}>
+            <Text style={tailwind("text-center text-white text-lg font-bold")}>
               Time: {"Insert Time Here"}
             </Text>
-            <Divider color="white" />
+            <Divider color="gray" />
           </View>
 
           <View style={tailwind("mx-auto pb-5")}>
             <Text style={tailwind("text-center text-white font-bold mt-5")}>
-              Visit Notes:
+              Appointment Notes:
             </Text>
 
-            <Text style={tailwind("text-center text-sm text-white")}>...</Text>
+            <Text style={tailwind("text-center text-white text-sm")}>...</Text>
           </View>
         </View>
       </Card>

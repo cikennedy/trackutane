@@ -1,7 +1,7 @@
 type Visit {
   date: Date
   provider: String
-  visitId: Int
+  visitId: String
   tracking: Tracking
     @materializer(
       query: "getTrackingById"

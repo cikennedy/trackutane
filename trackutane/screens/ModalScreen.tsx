@@ -48,7 +48,7 @@ const ModalScreen = () => {
               { color: "#59C1CC" },
             ]}
           >
-            Name: {lastName + ", " + firstName}
+            Patient Name: {lastName + ", " + firstName}
           </Text>
           <Text style={[tailwind("text-center text-sm"), { color: "#59C1CC" }]}>
             Visits:{" "}
@@ -57,9 +57,9 @@ const ModalScreen = () => {
       </View>
 
       <FlatList
-        contentContainerStyle={{ paddingBottom: 200 }}
+        // contentContainerStyle={{ paddingBottom: 200 }}
         data={visits}
-        keyExtractor={(visit) => visit.date}
+        keyExtractor={(visit) => visit.visitId}
         renderItem={({ item: visit }) => <VisitCard visit={visit} />}
       />
     </View>

@@ -44,7 +44,7 @@ type VisitDetails = {
 type Visit = {
   date: string;
   provider: string;
-  visitId: number;
+  visitId: string;
   tracking: Tracking;
 };
 
