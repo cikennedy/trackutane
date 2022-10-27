@@ -21,7 +21,7 @@ const usePatientVisits = (userId: string) => {
     );
 
     setVisits(patientVisits);
-  }, [data]);
+  }, [data, userId]);
 
   return { loading, error, visits };
 };

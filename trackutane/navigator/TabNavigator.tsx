@@ -27,7 +27,7 @@ const TabNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
-        tabBarActiveTintColor: "#59C1CC",
+        tabBarActiveTintColor: "#6c63ff",
         tabBarInactiveTintColor: "gray",
         tabBarIcon: ({ focused, color, size }) => {
           if (route.name === "Patients") {
@@ -38,7 +38,7 @@ const TabNavigator = () => {
               // <Icon
               //   name="users"
               //   type="entypo"
-              //   color={focused ? "#59C1CC" : "gray"}
+              //   color={focused ? "#6c63ff" : "gray"}
               // />
             );
           } else if (route.name === "Visits") {

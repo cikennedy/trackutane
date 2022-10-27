@@ -30,7 +30,7 @@ type Query {
       endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/tracking/$id.json"
     )
 
-  getTrackingList: [TrackingList]
+  getTracking: [TrackingList]
     @rest(
       endpoint: "https://trackutane-df6fc-default-rtdb.firebaseio.com/tracking.json"
       transforms: [{ pathpattern: [], editor: "objectToArray" }]

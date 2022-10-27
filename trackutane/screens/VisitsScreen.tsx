@@ -27,7 +27,7 @@ const VisitsScreen = () => {
   useLayoutEffect(() => {
     navigation.setOptions({
       tabBarLabel: ({ focused, color }) => (
-        <Text style={{ color: focused ? "#59C1CC" : color, fontSize: 10 }}>
+        <Text style={{ color: focused ? "#6c63ff" : color, fontSize: 10 }}>
           Visits
         </Text>
       ),
@@ -46,7 +46,7 @@ const VisitsScreen = () => {
 
       <View>
         <Button
-          color="#59C1CC"
+          color="#6c63ff"
           titleStyle={{ color: "white", fontWeight: "500" }}
           style={tailwind("py-2 px-5")}
           onPress={() => setAscending(!ascending)}

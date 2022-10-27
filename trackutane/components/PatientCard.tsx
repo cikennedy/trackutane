@@ -44,7 +44,7 @@ const PatientCard = ({ email, phone, firstName, lastName, userId }: Props) => {
 
             {/* <View style={tailwind("flex-row items-center justify-end")}>
               put most recent visit here instead of amount of visits? Days since last visit?
-              <Text style={{ color: "#59C1CC" }}>
+              <Text style={{ color: "#6c63ff" }}>
                 {loading ? "loading..." : `Last Visit: ${""}`}
               </Text>
               patient image here? otherwise render icon
@@ -52,7 +52,7 @@ const PatientCard = ({ email, phone, firstName, lastName, userId }: Props) => {
                 style={tailwind("mb-5 ml-auto")}
                 name="person"
                 type="ionicon"
-                color="#59C1CC"
+                color="#6c63ff"
                 size={50}
               />
             </View> */}

@@ -27,14 +27,8 @@ const PatientsScreen = () => {
   const [input, setInput] = useState<string>("");
   const { loading, error, data } = useQuery(GET_PATIENTS);
 
-  //   useLayoutEffect(() => {
-  //     navigation.setOptions({
-  //       headerShown: false,
-  //     });
-  //   }, []);
-
   return (
-    <ScrollView style={{ backgroundColor: "#59C1CC" }}>
+    <ScrollView style={{ backgroundColor: "#6c63ff" }}>
       <Image
         source={{
           uri: "https://github.com/cikennedy/trackutane-typescript/blob/main/trackutane/assets/undraw_medical_care_movn.png?raw=true",

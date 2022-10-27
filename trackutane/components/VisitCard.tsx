@@ -32,7 +32,7 @@ const VisitCard = ({ visit }: Props) => {
         containerStyle={[
           tailwind("rounded-lg my-2"),
           {
-            backgroundColor: "#59C1CC",
+            backgroundColor: "#6c63ff",
             padding: 0,
             paddingTop: 16,
             shadowColor: "black",

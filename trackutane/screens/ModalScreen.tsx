@@ -41,16 +41,16 @@ const ModalScreen = () => {
       </TouchableOpacity>
 
       <View style={{ marginTop: 10 }}>
-        <View style={[tailwind("py-5 border-b"), { borderColor: "#59C1CC" }]}>
+        <View style={[tailwind("py-5 border-b"), { borderColor: "#6c63ff" }]}>
           <Text
             style={[
               tailwind("text-center text-xl font-bold"),
-              { color: "#59C1CC" },
+              { color: "#6c63ff" },
             ]}
           >
             Patient Name: {lastName + ", " + firstName}
           </Text>
-          <Text style={[tailwind("text-center text-sm"), { color: "#59C1CC" }]}>
+          <Text style={[tailwind("text-center text-sm"), { color: "#6c63ff" }]}>
             Visits:{" "}
           </Text>
         </View>
