@@ -14,7 +14,7 @@ export type RootStackParamList = {
     firstName: string;
     lastName: string;
   };
-  Visit: { visit: any };
+  Visit: { visit: Visit };
 };
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();

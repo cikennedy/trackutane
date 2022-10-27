@@ -26,7 +26,14 @@ const VisitDetailsScreen = () => {
     params: { visit },
   } = useRoute<VisitDetailsScreenRouteProp>();
 
-  useLayoutEffect(() => {}, [visit]);
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerTitle:
+        visit.tracking.patient.lastName +
+        ", " +
+        visit.tracking.patient.firstName,
+    });
+  }, [visit]);
 
   return (
     <View style={tailwind("-mt-2")}>

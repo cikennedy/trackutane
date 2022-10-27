@@ -2,6 +2,19 @@ import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { Card, Icon } from "@rneui/themed";
 import { useTailwind } from "tailwind-rn/dist";
+import {
+  CompositeNavigationProp,
+  useNavigation,
+} from "@react-navigation/native";
+import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
+import { TabStackParamList } from "../navigator/TabNavigator";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStackParamList } from "../navigator/RootNavigator";
+
+export type VisitScreenNavigationProp = CompositeNavigationProp<
+  BottomTabNavigationProp<TabStackParamList, "Visits">,
+  NativeStackNavigationProp<RootStackParamList>
+>;
 
 type Props = {
   visit: Visit;
@@ -9,9 +22,12 @@ type Props = {
 
 const TrackingCard = ({ visit }: Props) => {
   const tailwind = useTailwind();
+  const navigation = useNavigation<VisitScreenNavigationProp>();
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity
+      onPress={() => navigation.navigate("Visit", { visit: visit })}
+    >
       <Card containerStyle={tailwind("px-5 rounded-lg")}>
         <View style={tailwind("flex-row justify-between items-center")}>
           <View>
