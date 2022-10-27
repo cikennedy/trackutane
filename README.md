@@ -50,6 +50,7 @@ To be added in the future:
 - Type definition files
 - Sign in, authentication for providers
 - Patient medical/prescription history, pharmacy used, etc. which is separate from the administrative information
+- HIPAA Compliance
 
 Expansion:
 

@@ -38,25 +38,25 @@ const PatientCard = ({ email, phone, firstName, lastName, userId }: Props) => {
               <Text>Email: {email}</Text>
             </View>
 
-            <View style={tailwind("flex-row items-center justify-end")}>
-              {/* put most recent visit here instead of amount of visits? Days since last visit? */}
+            {/* <View style={tailwind("flex-row items-center justify-end")}>
+              put most recent visit here instead of amount of visits? Days since last visit?
               <Text style={{ color: "#59C1CC" }}>
                 {loading ? "loading..." : `Last Visit: ${""}`}
               </Text>
-              {/* patient image here? otherwise render icon */}
-              {/* <Icon
+              patient image here? otherwise render icon
+              <Icon
                 style={tailwind("mb-5 ml-auto")}
                 name="person"
                 type="ionicon"
                 color="#59C1CC"
                 size={50}
-              /> */}
-            </View>
+              />
+            </View> */}
           </View>
         </View>
-        <Card.Divider />
+        {/* <Card.Divider /> */}
         {/* include next visit date here */}
-        <Text>Next Visit Date: </Text>
+        {/* <Text>Upcoming Appointment:  </Text> */}
       </Card>
     </TouchableOpacity>
   );
