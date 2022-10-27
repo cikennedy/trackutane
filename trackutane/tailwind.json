@@ -61,6 +61,11 @@
 			"marginTop": 20
 		}
 	},
+	"-mt-2": {
+		"style": {
+			"marginTop": -8
+		}
+	},
 	"block": {
 		"style": {
 			"display": "block"

@@ -8,7 +8,7 @@ type Tracking {
     )
 }
 type VisitDetails {
-  billing: Int
+  billing: Float
   cptCode: Int
   cumulativeDosage: Int
   goalDosage: Int

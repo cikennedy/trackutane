@@ -45,8 +45,10 @@ const PatientsScreen = () => {
       />
 
       {data?.getPatients
-        ?.filter((patient: PatientList) =>
-          patient.value.lastName.includes(input)
+        ?.filter(
+          (patient: PatientList) =>
+            patient.value.lastName.includes(input) ||
+            patient.value.firstName.includes(input)
         )
         .map(
           ({

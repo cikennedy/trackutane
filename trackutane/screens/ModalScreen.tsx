@@ -48,13 +48,23 @@ const ModalScreen = () => {
               { color: "#6c63ff" },
             ]}
           >
-            Patient Name: {lastName + ", " + firstName}
+            {lastName + ", " + firstName}
           </Text>
           <Text style={[tailwind("text-center text-sm"), { color: "#6c63ff" }]}>
-            Visits:{" "}
+            Appointments: {visits.length}
           </Text>
         </View>
       </View>
+
+      <View>
+        <Text>Hello</Text>
+      </View>
+
+      {/* <View>
+        {visits.map((visit) => (
+          <VisitCard key={visit.visitId} visit={visit} />
+        ))}
+      </View> */}
 
       <FlatList
         // contentContainerStyle={{ paddingBottom: 200 }}
