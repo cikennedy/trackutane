@@ -57,11 +57,12 @@ const PatientsScreen = () => {
         .map(
           ({
             name: ID,
-            value: { email, firstName, lastName },
+            value: { phone, email, firstName, lastName },
           }: PatientResponse) => (
             <PatientCard
               key={ID}
               email={email}
+              phone={phone}
               firstName={firstName}
               lastName={lastName}
               userId={ID}

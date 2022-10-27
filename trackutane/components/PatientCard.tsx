@@ -11,9 +11,10 @@ type Props = {
   firstName: string;
   lastName: string;
   email: string;
+  phone: string;
 };
 
-const PatientCard = ({ email, firstName, lastName, userId }: Props) => {
+const PatientCard = ({ email, phone, firstName, lastName, userId }: Props) => {
   const tailwind = useTailwind();
   const { loading, error, visits } = usePatientVisits(userId);
   const navigation = useNavigation<PatientScreenNavigationProp>();
@@ -32,7 +33,7 @@ const PatientCard = ({ email, firstName, lastName, userId }: Props) => {
                 {lastName + "," + " " + firstName}
               </Text>
               <Text style={[tailwind("text-sm"), { color: "black" }]}>
-                Phone:{" "}
+                Phone: {phone}
               </Text>
               <Text>Email: {email}</Text>
             </View>
