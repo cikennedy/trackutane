@@ -1,15 +1,40 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
+import { Card, Icon } from "@rneui/themed";
+import { useTailwind } from "tailwind-rn/dist";
 
 type Props = {
-  item: Visit;
+  visit: Visit;
 };
 
-const TrackingCard = ({ item }: Props) => {
+const TrackingCard = ({ visit }: Props) => {
+  const tailwind = useTailwind();
+
   return (
-    <View>
-      <Text>TrackingCard</Text>
-    </View>
+    <TouchableOpacity>
+      <Card containerStyle={tailwind("px-5 rounded-lg")}>
+        <View style={tailwind("flex-row justify-between items-center")}>
+          <View>
+            {/* <Icon name="" color="#59C1CC" type="" /> */}
+            <Text style={{ fontSize: 10 }}>
+              {new Date(visit.date).toDateString()}
+            </Text>
+          </View>
+
+          <View>
+            <Text>Provider: {visit.provider}</Text>
+            <Text>{visit.tracking.patient.firstName}</Text>
+          </View>
+
+          <View style={tailwind("flex-row items-center")}>
+            <Text style={(tailwind("text-sm"), { color: "#59C1CC" })}>
+              {}, {},{" "}
+            </Text>
+            <Text></Text>
+          </View>
+        </View>
+      </Card>
+    </TouchableOpacity>
   );
 };
 

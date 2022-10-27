@@ -27,7 +27,7 @@ const VisitsScreen = () => {
   useLayoutEffect(() => {
     navigation.setOptions({
       tabBarLabel: ({ focused, color }) => (
-        <Text style={{ color: focused ? "#EB6A7C" : color, fontSize: 10 }}>
+        <Text style={{ color: focused ? "#59C1CC" : color, fontSize: 10 }}>
           Visits
         </Text>
       ),
@@ -46,8 +46,8 @@ const VisitsScreen = () => {
 
       <View>
         <Button
-          color="#EB6A7C"
-          titleStyle={{ color: "gray", fontWeight: "500" }}
+          color="#59C1CC"
+          titleStyle={{ color: "white", fontWeight: "500" }}
           style={tailwind("py-2 px-5")}
           onPress={() => setAscending(!ascending)}
         >
@@ -63,7 +63,7 @@ const VisitsScreen = () => {
             }
           })
           .map((visit) => (
-            <TrackingCard key={visit.visitId} item={visit} />
+            <TrackingCard key={visit.visitId} visit={visit} />
           ))}
       </View>
     </ScrollView>
