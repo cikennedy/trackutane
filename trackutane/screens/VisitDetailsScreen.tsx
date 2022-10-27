@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const VisitScreen = () => {
+const VisitDetailsScreen = () => {
   return (
     <View>
       <Text>VisitScreen</Text>
@@ -9,4 +9,4 @@ const VisitScreen = () => {
   );
 };
 
-export default VisitScreen;
+export default VisitDetailsScreen;

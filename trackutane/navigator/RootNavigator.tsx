@@ -3,6 +3,7 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import TabNavigator from "./TabNavigator";
 import ModalScreen from "../screens/ModalScreen";
+import VisitDetailsScreen from "../screens/VisitDetailsScreen";
 
 // this is all in the documentation
 export type RootStackParamList = {
@@ -34,7 +35,7 @@ const RootNavigator = () => {
       </RootStack.Group>
 
       <RootStack.Group>
-        <RootStack.Screen name="Visit" component={VisitScreen} />
+        <RootStack.Screen name="Visit" component={VisitDetailsScreen} />
       </RootStack.Group>
     </RootStack.Navigator>
   );
