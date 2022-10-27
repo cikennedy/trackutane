@@ -1,7 +1,20 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useTailwind } from "tailwind-rn/dist";
 import { Card, Divider, Icon } from "@rneui/themed";
+import {
+  CompositeNavigationProp,
+  useNavigation,
+} from "@react-navigation/native";
+import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
+import { TabStackParamList } from "../navigator/TabNavigator";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStackParamList } from "../navigator/RootNavigator";
+
+export type VisitScreenNavigationProp = CompositeNavigationProp<
+  BottomTabNavigationProp<TabStackParamList, "Visits">,
+  NativeStackNavigationProp<RootStackParamList>
+>;
 
 type Props = {
   visit: Visit;
@@ -9,52 +22,57 @@ type Props = {
 
 const VisitCard = ({ visit }: Props) => {
   const tailwind = useTailwind();
+  const navigation = useNavigation<VisitScreenNavigationProp>();
 
   return (
-    <Card
-      containerStyle={[
-        tailwind("rounded-lg my-2"),
-        {
-          backgroundColor: "#59C1CC",
-          padding: 0,
-          paddingTop: 16,
-          shadowColor: "black",
-          shadowOffset: { width: 0, height: 2 },
-          shadowOpacity: 0.2,
-          shadowRadius: 4,
-        },
-      ]}
+    <TouchableOpacity
+      onPress={() => navigation.navigate("Visit", { visit: visit })}
     >
-      <View>
-        <Icon name="calendar" type="entypo" color="white" />
-
+      <Card
+        containerStyle={[
+          tailwind("rounded-lg my-2"),
+          {
+            backgroundColor: "#59C1CC",
+            padding: 0,
+            paddingTop: 16,
+            shadowColor: "black",
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.2,
+            shadowRadius: 4,
+          },
+        ]}
+      >
         <View>
-          <Text
-            style={tailwind(
-              "text-xs text-center uppercase text-white font-bold"
-            )}
-          >
-            {visit.provider}
-          </Text>
-          <Text style={tailwind("text-white text-center text-lg font-bold")}>
-            Date: {new Date(visit.date).toLocaleDateString()}
-          </Text>
-          {/* TO-DO Create time field for visits */}
-          <Text style={tailwind("text-white text-center text-lg font-bold")}>
-            Time: {"Insert Time Here"}
-          </Text>
-          <Divider color="white" />
-        </View>
+          <Icon name="calendar" type="entypo" color="white" />
 
-        <View style={tailwind("mx-auto pb-5")}>
-          <Text style={tailwind("text-center text-white font-bold mt-5")}>
-            Visit Notes:
-          </Text>
+          <View>
+            <Text
+              style={tailwind(
+                "text-xs text-center uppercase text-white font-bold"
+              )}
+            >
+              {visit.provider}
+            </Text>
+            <Text style={tailwind("text-white text-center text-lg font-bold")}>
+              Date: {new Date(visit.date).toLocaleDateString()}
+            </Text>
+            {/* TO-DO Create time field for visits */}
+            <Text style={tailwind("text-white text-center text-lg font-bold")}>
+              Time: {"Insert Time Here"}
+            </Text>
+            <Divider color="white" />
+          </View>
 
-          <Text style={tailwind("text-center text-sm text-white")}>...</Text>
+          <View style={tailwind("mx-auto pb-5")}>
+            <Text style={tailwind("text-center text-white font-bold mt-5")}>
+              Visit Notes:
+            </Text>
+
+            <Text style={tailwind("text-center text-sm text-white")}>...</Text>
+          </View>
         </View>
-      </View>
-    </Card>
+      </Card>
+    </TouchableOpacity>
   );
 };
 
