@@ -22,8 +22,11 @@ const TrackingCard = ({ visit }: Props) => {
           </View>
 
           <View>
+            <Text>
+              Patient: {visit.tracking.patient?.lastName},{" "}
+              {visit.tracking.patient?.firstName}{" "}
+            </Text>
             <Text>Provider: {visit.provider}</Text>
-            <Text>{visit.tracking.patient.firstName}</Text>
           </View>
 
           <View style={tailwind("flex-row items-center")}>

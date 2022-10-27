@@ -146,6 +146,12 @@
 			"paddingLeft": 20
 		}
 	},
+	"px-5": {
+		"style": {
+			"paddingLeft": 20,
+			"paddingRight": 20
+		}
+	},
 	"py-5": {
 		"style": {
 			"paddingTop": 20,
@@ -162,12 +168,6 @@
 		"style": {
 			"paddingTop": 8,
 			"paddingBottom": 8
-		}
-	},
-	"px-5": {
-		"style": {
-			"paddingLeft": 20,
-			"paddingRight": 20
 		}
 	},
 	"pb-5": {
