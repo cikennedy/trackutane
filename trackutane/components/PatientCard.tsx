@@ -22,7 +22,11 @@ const PatientCard = ({ email, phone, firstName, lastName, userId }: Props) => {
   return (
     <TouchableOpacity
       onPress={() =>
-        navigation.navigate("MyModal", { name: firstName, userId: userId })
+        navigation.navigate("MyModal", {
+          firstName: firstName,
+          lastName: lastName,
+          userId: userId,
+        })
       }
     >
       <Card containerStyle={[tailwind("p-5 rounded-lg"), { color: "gray" }]}>

@@ -9,7 +9,7 @@ import VisitDetailsScreen from "../screens/VisitDetailsScreen";
 export type RootStackParamList = {
   // no props so we aren't going to pass any value
   Main: undefined;
-  MyModal: { userId: string; name: string };
+  MyModal: { userId: string; firstName: string; lastName: string };
   Visit: { visit: any };
 };
 

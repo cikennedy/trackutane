@@ -26,7 +26,7 @@ const ModalScreen = () => {
   const tailwind = useTailwind();
   const navigation = useNavigation<ModalScreenNavigationProp>();
   const {
-    params: { name, userId },
+    params: { firstName, lastName, userId },
   } = useRoute<ModalScreenRouteProp>();
 
   const { loading, error, visits } = usePatientVisits(userId);
@@ -37,7 +37,7 @@ const ModalScreen = () => {
         onPress={navigation.goBack}
         style={tailwind("absolute right-5 top-5 z-10")}
       >
-        <Icon name="closecircle" type="antdesign" />
+        {/* <Icon name="closecircle" type="antdesign" /> */}
       </TouchableOpacity>
 
       <View style={{ marginTop: 10 }}>
@@ -48,7 +48,7 @@ const ModalScreen = () => {
               { color: "#59C1CC" },
             ]}
           >
-            Name:{" "}
+            Name: {lastName + ", " + firstName}
           </Text>
           <Text style={[tailwind("text-center text-sm"), { color: "#59C1CC" }]}>
             Visits:{" "}
