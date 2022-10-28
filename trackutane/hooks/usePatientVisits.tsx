@@ -10,14 +10,14 @@ const usePatientVisits = (userId: string) => {
     if (!data) return;
 
     const visits: Visit[] = data.getVisits.map(({ value }: VisitResponse) => ({
-      date: value.date,
+      visitDate: value.visitDate,
       provider: value.provider,
       visitId: value.visitId,
       tracking: value.tracking,
     }));
 
     const patientVisits = visits.filter(
-      (visit) => visit.tracking.patient_id === userId
+      (visit) => visit.tracking?.patient_id === userId
     );
 
     setVisits(patientVisits);

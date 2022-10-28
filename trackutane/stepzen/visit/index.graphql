@@ -12,7 +12,7 @@ type Visit {
 
 type VisitList {
   name: ID
-  value: [Visit]
+  value: Visit
 }
 
 type Query {

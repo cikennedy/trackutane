@@ -40,8 +40,8 @@ const TrackingCard = ({ visit }: Props) => {
 
           <View>
             <Text>
-              Patient: {visit.tracking.patient?.lastName},{" "}
-              {visit.tracking.patient?.firstName}{" "}
+              Patient: {visit.tracking?.patient?.lastName},{" "}
+              {visit.tracking?.patient?.firstName}{" "}
             </Text>
             <Text>Provider: {visit.provider}</Text>
           </View>

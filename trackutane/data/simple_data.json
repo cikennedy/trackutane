@@ -1,0 +1,303 @@
+{
+    "patients": {
+      "183289": {
+        "dateAdded": "09/26/2022",
+        "firstName": "Lucas",
+        "lastName": "Johnson",
+        "address": "3446 Jadewood Drive",
+        "address2": "Unit 2",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60607",
+        "phone": "111-111-1111",
+        "email": "lucas.johnson@example.com",
+        "birthDate": "10/09/1957",
+        "insuranceFront": "img",
+        "insuranceBack": "img",
+        "insuranceProvider": "BCBS",
+        "memberID": "5555555",
+        "group": "IB5555",
+        "effectiveDate": "2022-01-01"
+      },
+      "389877": {
+        "dateAdded": "02/04/2020",
+        "firstName": "Cody",
+        "lastName": "Woodson",
+        "address": "1752 Cerullo Road",
+        "address2": "",
+        "city": "Louisville",
+        "state": "KY",
+        "zipCode": "40299",
+        "phone": "2222-222-2222",
+        "email": "jarrell2007@yahoo.com",
+        "birthDate": "04/15/1991",
+        "insuranceFront": "img",
+        "insuranceBack": "img",
+        "insuranceProvider": "BCBS",
+        "memberID": "5555555",
+        "group": "IB5555",
+        "effectiveDate": "2022-01-01"
+      },
+      "745251": {
+        "dateAdded": "03/03/2021",
+        "firstName": "Mia",
+        "lastName": "Kennedy",
+        "address": "5992 E Pecan St",
+        "address2": "Apt 903",
+        "city": "Naperville",
+        "state": "IL",
+        "zipCode": "60139",
+        "phone": "333-333-3333",
+        "email": "mia.kennedy@example.com",
+        "birthDate": "01/05/1989",
+        "insuranceFront": "img",
+        "insuranceBack": "img",
+        "insuranceProvider": "BCBS",
+        "memberID": "5555555",
+        "group": "IB5555",
+        "effectiveDate": "2022-01-01"
+      },
+      "991458": {
+        "dateAdded": "11/18/2019",
+        "firstName": "Tomothy",
+        "lastName": "Fernandez",
+        "address": "1330 Bollinger Rd",
+        "address2": "Unit 2",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60607",
+        "phone": "449-444-7852",
+        "email": "tomothy.fernandez@example.com",
+        "birthDate": "01/01/1956",
+        "insuranceFront": "img",
+        "insuranceBack": "img",
+        "insuranceProvider": "BCBS",
+        "memberID": "5555555",
+        "group": "IB5555",
+        "effectiveDate": "2022-01-01"
+      },
+      "292024": {
+        "dateAdded": "09/26/2022",
+        "firstName": "Shane",
+        "lastName": "Holland",
+        "address": "5220 Poplar Dr",
+        "address2": "",
+        "city": "Burr Ridge",
+        "state": "IL",
+        "zipCode": "60649",
+        "phone": "555-555-5555",
+        "email": "shane.holland@example.com",
+        "birthDate": "06/01/1986",
+        "insuranceFront": "img",
+        "insuranceBack": "img",
+        "insuranceProvider": "BCBS",
+        "memberID": "5555555",
+        "group": "IB5555",
+        "effectiveDate": "2022-01-01"
+      }
+    },
+    "visits": {
+      "292024": {
+        "visitId": "0dabe2e2-56c8-11ed-9b6a-0242ac120002",
+        "visitDate": "2022-01-08",
+        "visitTime": "11:00 AM",
+        "provider": "Dr. Roberta Gomez"
+      }, 
+      "991458": {
+        "visitId": "0dabe0bc-56c8-11ed-9b6a-0242ac120002",
+        "visitDate": "2022-04-07",
+        "visitTime": "9:00 AM",
+        "provider": "Dr. Duane Simmons"
+        },
+      "745251": {
+        "visitId": "0dabde0a-56c8-11ed-9b6a-0242ac120002",
+        "visitDate": "2022-03-02",
+        "visitTime": "10:00 AM",
+        "provider": "Kelly Hansen, PA"
+      },
+      "389877": {
+        "visitId": "0dabdc98-56c8-11ed-9b6a-0242ac120002",
+        "visitDate": "2022-09-10",
+        "visitTime": "8:00 AM",
+        "provider": "Dr. Duane Simmons"
+      },
+      "183289": {
+        "visitId": "0dabd982-56c8-11ed-9b6a-0242ac120002",
+        "visitDate": "2022-08-08",
+        "visitTime": "4:00 PM",
+        "provider": "Dr. Roberta Gomez"
+    }   
+    },
+    "tracking": {
+      "0dabd982-56c8-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 30,
+            "cumulativeDosage": 100,
+            "goalDosage": 200,
+            "height": "5'10",
+            "weight": 175,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2022-09-05",
+            "nextVisitTime": "3:00 PM"
+          }
+        ],
+        "patient_id": "183289"
+      },
+      "0dabdc98-56c8-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 15,
+            "cumulativeDosage": 90,
+            "goalDosage": 170,
+            "height": "5'03",
+            "weight": 135,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2022-11-05",
+            "nextVisitTime": "5:00 PM"
+          }
+        ],
+        "patient_id": "389877"
+      },
+      "2d6694d4-56cc-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 15,
+            "cumulativeDosage": 90,
+            "goalDosage": 170,
+            "height": "5'03",
+            "weight": 135,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2022-11-05",
+            "nextVisitTime": "5:00 PM"
+          }
+        ],
+        "patient_id": "389877"
+      },
+      "0dabde0a-56c8-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 20,
+            "cumulativeDosage": 90,
+            "goalDosage": 180,
+            "height": "5'02",
+            "weight": 140,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2022-12-11",
+            "nextVisitTime": "12:00 PM"
+          }
+        ],
+        "patient_id": "745251"
+      },
+      "2d669b14-56cc-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 20,
+            "cumulativeDosage": 90,
+            "goalDosage": 180,
+            "height": "5'02",
+            "weight": 140,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2022-12-11",
+            "nextVisitTime": "12:00 PM"
+          }
+        ],
+        "patient_id": "745251"
+      },
+      "0dabe0bc-56c8-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 25,
+            "cumulativeDosage": 135,
+            "goalDosage": 210,
+            "height": "6'01",
+            "weight": 190,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2021-12-12",
+            "nextVisitTime": "11:00 AM"
+          }
+        ],
+        "patient_id": "991458"
+      },
+      "0dabe2e2-56c8-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 10,
+            "cumulativeDosage": 120,
+            "goalDosage": 230,
+            "height": "5'08",
+            "weight": 203,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2022-10-22",
+            "nextVisitTime": "9:00 AM"
+          }
+        ],
+        "patient_id": "292024"
+      },
+      "0dabe47c-56c8-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 10,
+            "cumulativeDosage": 130,
+            "goalDosage": 230,
+            "height": "5'08",
+            "weight": 203,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2023-01-10",
+            "nextVisitTime": "6:00 PM"
+          }
+        ],
+        "patient_id": "292024"
+      },
+      "0dabe68e-56c8-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 25,
+            "cumulativeDosage": 150,
+            "goalDosage": 230,
+            "height": "5'08",
+            "weight": 203,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2023-10-04",
+            "nextVisitTime": "7:00 AM"
+          }
+        ],
+        "patient_id": "991458"
+      },
+      "0dabecf6-56c8-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 10,
+            "cumulativeDosage": 120,
+            "goalDosage": 230,
+            "height": "5'08",
+            "weight": 203,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2023-04-04",
+            "nextVisitTime": "10:00 AM"
+          }
+        ],
+        "patient_id": "183289"
+      }
+    }
+}
