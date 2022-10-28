@@ -99,27 +99,32 @@
     "visits": {
       "292024": {
         "visitId": "ZA5",
-        "date": "2022-01-08",
+        "visitDate": "2022-01-08",
+        "visitTime": "11:00 AM",
         "provider": "Dr. Roberta Gomez"
       },
       "991458": {
         "visitId": "ZA4",
-        "date": "2022-04-07",
+        "visitDate": "2022-04-07",
+        "visitTime": "9:00 AM",
         "provider": "Dr. Duane Simmons"
       },
       "745251": {
         "visitId": "ZA3",
-        "date": "2022-03-02",
+        "visitDate": "2022-03-02",
+        "visitTime": "10:00 AM",
         "provider": "Kelly Hansen, PA"
       },
       "389877": {
         "visitId": "ZA2",
-        "date": "2022-09-10",
+        "visitDate": "2022-09-10",
+        "visitTime": "8:00 AM",
         "provider": "Dr. Duane Simmons"
       },
       "183289": {
         "visitId": "ZA1",
-        "date": "2022-08-08",
+        "visitDate": "2022-08-08",
+        "visitTime": "4:00 PM",
         "provider": "Dr. Roberta Gomez"
       }
     }, 
@@ -135,7 +140,8 @@
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
             "billing": "100.00",
-            "nextVisit": "2022-09-05"
+            "nextVisitDate": "2022-09-05",
+            "nextVisitTime": "3:00 PM"
           }
         ],
         "patient_id": "183289"
@@ -151,7 +157,8 @@
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
             "billing": "100.00",
-            "nextVisit": "2022-09-05"
+            "nextVisitDate": "2022-11-05",
+            "nextVisitTime": "5:00 PM"
           }
         ],
         "patient_id": "389877"
@@ -167,7 +174,8 @@
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
             "billing": "100.00",
-            "nextVisit": "2022-09-05"
+            "nextVisitDate": "2022-12-11",
+            "nextVisitTime": "12:00 PM"
           }
         ],
         "patient_id": "745251"
@@ -183,7 +191,8 @@
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
             "billing": "100.00",
-            "nextVisit": "2022-09-05"
+            "nextVisitDate": "2021-12-12",
+            "nextVisitTime": "11:00 AM"
           }
         ],
         "patient_id": "991458"
@@ -199,7 +208,8 @@
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
             "billing": "100.00",
-            "nextVisit": "2022-09-05"
+            "nextVisitDate": "2022-10-22",
+            "nextVisitTime": "9:00 AM"
           }
         ],
         "patient_id": "292024"
@@ -215,7 +225,8 @@
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
             "billing": "100.00",
-            "nextVisit": "2022-10-05"
+            "nextVisitDate": "2023-01-10",
+            "nextVisitTime": "6:00 PM"
           }
         ],
         "patient_id": "292024"
@@ -231,7 +242,8 @@
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
             "billing": "100.00",
-            "nextVisit": "2022-10-04"
+            "nextVisitDate": "2023-10-04",
+            "nextVisitTime": "7:00 AM"
           }
         ],
         "patient_id": "991458"
@@ -247,7 +259,8 @@
             "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
             "cptCode": "11603",
             "billing": "100.00",
-            "nextVisit": "2022-09-05"
+            "nextVisitDate": "2023-04-04",
+            "nextVisitTime": "10:00 AM"
           }
         ],
         "patient_id": "183289"

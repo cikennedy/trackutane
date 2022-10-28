@@ -61,21 +61,6 @@
 			"marginTop": 20
 		}
 	},
-	"-mt-2": {
-		"style": {
-			"marginTop": -8
-		}
-	},
-	"mt-2": {
-		"style": {
-			"marginTop": 8
-		}
-	},
-	"-mt-5": {
-		"style": {
-			"marginTop": -20
-		}
-	},
 	"block": {
 		"style": {
 			"display": "block"
@@ -217,16 +202,16 @@
 			"lineHeight": 20
 		}
 	},
-	"text-xs": {
-		"style": {
-			"fontSize": 12,
-			"lineHeight": 16
-		}
-	},
 	"text-lg": {
 		"style": {
 			"fontSize": 18,
 			"lineHeight": 28
+		}
+	},
+	"text-xs": {
+		"style": {
+			"fontSize": 12,
+			"lineHeight": 16
 		}
 	},
 	"text-xl": {
