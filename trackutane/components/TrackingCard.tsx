@@ -28,22 +28,33 @@ const TrackingCard = ({ visit }: Props) => {
     <TouchableOpacity
       onPress={() => navigation.navigate("Visit", { visit: visit })}
     >
-      <Card containerStyle={tailwind("px-5 rounded-lg")}>
-        <View style={tailwind("flex-row justify-between items-center")}>
+      <Card
+        containerStyle={[
+          tailwind("px-5 rounded-lg"),
+          { backgroundColor: "#6c63ff" },
+        ]}
+      >
+        <View
+          style={tailwind("flex-row text-white justify-between items-center")}
+        >
           <View style={tailwind("self-start items-center")}>
             {/* <Icon name="" color="#59C1CC" type="" /> */}
-            <Text style={{ fontSize: 10 }}>
+            <Text style={[tailwind("text-white"), { fontSize: 10 }]}>
               {new Date(visit.visitDate).toDateString()}
             </Text>
-            <Text style={{ fontSize: 10 }}>{visit.visitTime}</Text>
+            <Text style={[tailwind("text-white"), { fontSize: 10 }]}>
+              {visit.visitTime}
+            </Text>
           </View>
 
           <View style={tailwind("self-start items-center")}>
-            <Text>
+            <Text style={tailwind("text-white")}>
               Patient: {visit.tracking?.patient?.lastName},{" "}
               {visit.tracking?.patient?.firstName}{" "}
             </Text>
-            <Text>Provider: {visit.provider}</Text>
+            <Text style={tailwind("text-white")}>
+              Provider: {visit.provider}
+            </Text>
           </View>
 
           {/* <View style={tailwind("flex-row items-center")}>

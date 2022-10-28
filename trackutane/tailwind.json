@@ -111,24 +111,9 @@
 			"justifyContent": "space-between"
 		}
 	},
-	"justify-evenly": {
-		"style": {
-			"justifyContent": "space-evenly"
-		}
-	},
-	"self-auto": {
-		"style": {
-			"alignSelf": "auto"
-		}
-	},
 	"self-start": {
 		"style": {
 			"alignSelf": "flex-start"
-		}
-	},
-	"self-end": {
-		"style": {
-			"alignSelf": "flex-end"
 		}
 	},
 	"rounded-lg": {

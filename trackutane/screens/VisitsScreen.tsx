@@ -46,8 +46,12 @@ const VisitsScreen = () => {
 
       <View>
         <Button
-          color="#6c63ff"
-          titleStyle={{ color: "white", fontWeight: "500" }}
+          color="white"
+          titleStyle={{
+            color: "#6c63ff",
+            fontWeight: "500",
+            borderColor: "#6c63ff",
+          }}
           style={tailwind("py-2 px-5")}
           onPress={() => setAscending(!ascending)}
         >
@@ -57,9 +61,9 @@ const VisitsScreen = () => {
         {visits
           ?.sort((a, b) => {
             if (ascending) {
-              return new Date(a.date) > new Date(b.date) ? 1 : -1;
+              return new Date(a.visitDate) > new Date(b.visitDate) ? 1 : -1;
             } else {
-              return new Date(a.date) < new Date(b.date) ? 1 : -1;
+              return new Date(a.visitDate) < new Date(b.visitDate) ? 1 : -1;
             }
           })
           .map((visit) => (
