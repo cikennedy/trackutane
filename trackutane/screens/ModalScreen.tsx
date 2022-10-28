@@ -14,6 +14,7 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../navigator/RootNavigator";
 import usePatientVisits from "../hooks/usePatientVisits";
 import VisitCard from "../components/VisitCard";
+import { visit } from "graphql";
 
 type ModalScreenNavigationProp = CompositeNavigationProp<
   BottomTabNavigationProp<TabStackParamList>,
@@ -56,22 +57,20 @@ const ModalScreen = () => {
         </View>
       </View>
 
-      <View>
-        <Text>Hello</Text>
-      </View>
+      <Text></Text>
 
-      {/* <View>
+      <View>
         {visits.map((visit) => (
           <VisitCard key={visit.visitId} visit={visit} />
         ))}
-      </View> */}
+      </View>
 
-      <FlatList
+      {/* <FlatList
         // contentContainerStyle={{ paddingBottom: 200 }}
         data={visits}
         keyExtractor={(visit) => visit.visitId}
         renderItem={({ item: visit }) => <VisitCard visit={visit} />}
-      />
+      /> */}
     </View>
   );
 };

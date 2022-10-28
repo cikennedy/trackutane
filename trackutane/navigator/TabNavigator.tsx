@@ -34,6 +34,7 @@ const TabNavigator = () => {
           if (route.name === "Patients") {
             return (
               <Image source={require("../assets/icons8-people-50.png")} />
+
               // <Icon
               //   name="users"
               //   type="entypo"

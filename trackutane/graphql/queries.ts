@@ -33,23 +33,10 @@ export const GET_VISITS = gql`
       name
       value {
         provider
-        visitId
         visitDate
         visitTime
+        visitId
         tracking {
-          patient_id
-          visitDetails {
-            billing
-            cptCode
-            cumulativeDosage
-            height
-            goalDosage
-            nextVisitDate
-            nextVisitTime
-            notes
-            visitDosage
-            weight
-          }
           patient {
             address
             address2
@@ -68,6 +55,18 @@ export const GET_VISITS = gql`
             phone
             state
             zipCode
+          }
+          visitDetails {
+            billing
+            cptCode
+            cumulativeDosage
+            goalDosage
+            height
+            nextVisitDate
+            nextVisitTime
+            notes
+            visitDosage
+            weight
           }
         }
       }

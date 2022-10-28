@@ -9,6 +9,9 @@ import {
   gql,
 } from "@apollo/client";
 
+import { NativeModules } from "react-native";
+NativeModules.DevSettings.setIsDebuggingRemotely(false);
+
 const client = new ApolloClient({
   uri: "http://localhost:5001/api/erstwhile-nightingale",
   cache: new InMemoryCache(),
