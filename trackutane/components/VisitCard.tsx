@@ -43,7 +43,7 @@ const VisitCard = ({ visit, fullWidth }: Props) => {
           },
         ]}
       >
-        <View>
+        <View style={fullWidth && { height: "100%" }}>
           {/* <Icon name="calendar" type="entypo" color="white" /> */}
 
           <View>
