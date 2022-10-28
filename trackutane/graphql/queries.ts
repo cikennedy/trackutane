@@ -32,9 +32,10 @@ export const GET_VISITS = gql`
     getVisits {
       name
       value {
-        date
         provider
         visitId
+        visitDate
+        visitTime
         tracking {
           patient_id
           visitDetails {
@@ -43,7 +44,8 @@ export const GET_VISITS = gql`
             cumulativeDosage
             height
             goalDosage
-            nextVisit
+            nextVisitDate
+            nextVisitTime
             notes
             visitDosage
             weight

@@ -48,11 +48,11 @@ const VisitCard = ({ visit, fullWidth }: Props) => {
 
           <View>
             <Text style={tailwind("text-center text-white text-lg font-bold")}>
-              Date: {new Date(visit.date).toLocaleDateString()}
+              Date: {new Date(visit.visitDate).toLocaleDateString()}
             </Text>
             {/* TO-DO Create time field for visits */}
             <Text style={tailwind("text-center text-white text-lg font-bold")}>
-              Time: 3:00 PM
+              Time: {visit.visitTime}
             </Text>
             {/* <Divider color="white" /> */}
             <Text
