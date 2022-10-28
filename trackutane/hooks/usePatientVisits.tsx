@@ -11,6 +11,7 @@ const usePatientVisits = (userId: string) => {
 
     const visits: Visit[] = data.getVisits.map(({ value }: VisitResponse) => ({
       visitDate: value.visitDate,
+      visitTime: value.visitTime,
       provider: value.provider,
       visitId: value.visitId,
       tracking: value.tracking,

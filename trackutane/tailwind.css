@@ -88,6 +88,22 @@
   justify-content: space-between
 }
 
+.justify-evenly {
+  justify-content: space-evenly
+}
+
+.self-auto {
+  align-self: auto
+}
+
+.self-start {
+  align-self: flex-start
+}
+
+.self-end {
+  align-self: flex-end
+}
+
 .rounded-lg {
   border-radius: 0.5rem
 }

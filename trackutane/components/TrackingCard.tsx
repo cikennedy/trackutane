@@ -30,7 +30,7 @@ const TrackingCard = ({ visit }: Props) => {
     >
       <Card containerStyle={tailwind("px-5 rounded-lg")}>
         <View style={tailwind("flex-row justify-between items-center")}>
-          <View>
+          <View style={tailwind("self-start items-center")}>
             {/* <Icon name="" color="#59C1CC" type="" /> */}
             <Text style={{ fontSize: 10 }}>
               {new Date(visit.visitDate).toDateString()}
@@ -38,7 +38,7 @@ const TrackingCard = ({ visit }: Props) => {
             <Text style={{ fontSize: 10 }}>{visit.visitTime}</Text>
           </View>
 
-          <View>
+          <View style={tailwind("self-start items-center")}>
             <Text>
               Patient: {visit.tracking?.patient?.lastName},{" "}
               {visit.tracking?.patient?.firstName}{" "}
