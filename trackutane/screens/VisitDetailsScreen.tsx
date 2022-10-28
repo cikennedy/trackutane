@@ -32,11 +32,14 @@ const VisitDetailsScreen = () => {
         visit.tracking.patient.lastName +
         ", " +
         visit.tracking.patient.firstName,
+      headerTintColor: "",
+      headerTitleStyle: { color: "black" },
+      headerBackTitle: "Appointments",
     });
   }, [visit]);
 
   return (
-    <View style={tailwind("-mt-2")}>
+    <View>
       <Text>VisitScreen</Text>
     </View>
   );

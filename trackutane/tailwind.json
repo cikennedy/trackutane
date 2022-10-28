@@ -66,6 +66,16 @@
 			"marginTop": -8
 		}
 	},
+	"mt-2": {
+		"style": {
+			"marginTop": 8
+		}
+	},
+	"-mt-5": {
+		"style": {
+			"marginTop": -20
+		}
+	},
 	"block": {
 		"style": {
 			"display": "block"

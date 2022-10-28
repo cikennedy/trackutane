@@ -6,6 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 import { Icon } from "@rneui/themed";
 import { Image } from "@rneui/themed";
 import { Text, View } from "react-native";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export type TabStackParamList = {
   Patients: undefined;
@@ -32,9 +33,7 @@ const TabNavigator = () => {
         tabBarIcon: ({ focused, color, size }) => {
           if (route.name === "Patients") {
             return (
-              <View>
-                <Text>Hello</Text>
-              </View>
+              <Image source={require("../assets/icons8-people-50.png")} />
               // <Icon
               //   name="users"
               //   type="entypo"
@@ -43,9 +42,8 @@ const TabNavigator = () => {
             );
           } else if (route.name === "Visits") {
             return (
-              <View>
-                <Text>Hello</Text>
-              </View>
+              <Image source={require("../assets/icons8-hospital-64.png")} />
+
               // <Icon
               //   name="calendar"
               //   type="entypo"
