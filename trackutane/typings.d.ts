@@ -37,12 +37,14 @@ type VisitDetails = {
   notes: string;
   cptCode: number;
   billing: number;
-  nextVisit: string;
+  nextVisitDate: string;
+  nextVisitTime: string;
   weight: number;
 };
 
 type Visit = {
-  date: string;
+  visitDate: string;
+  visitTime: string;
   provider: string;
   visitId: string;
   tracking: Tracking;

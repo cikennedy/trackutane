@@ -1,5 +1,6 @@
 type Visit {
-  date: Date
+  visitDate: Date
+  visitTime: String
   provider: String
   visitId: String
   tracking: Tracking
