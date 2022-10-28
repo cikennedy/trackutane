@@ -33,8 +33,9 @@ const TrackingCard = ({ visit }: Props) => {
           <View>
             {/* <Icon name="" color="#59C1CC" type="" /> */}
             <Text style={{ fontSize: 10 }}>
-              {new Date(visit.date).toDateString()}
+              {new Date(visit.visitDate).toDateString()}
             </Text>
+            <Text style={{ fontSize: 10 }}>{visit.visitTime}</Text>
           </View>
 
           <View>
