@@ -18,9 +18,10 @@ export type VisitScreenNavigationProp = CompositeNavigationProp<
 
 type Props = {
   visit: Visit;
+  fullWidth?: boolean;
 };
 
-const VisitCard = ({ visit }: Props) => {
+const VisitCard = ({ visit, fullWidth }: Props) => {
   const tailwind = useTailwind();
   const navigation = useNavigation<VisitScreenNavigationProp>();
 
@@ -46,6 +47,14 @@ const VisitCard = ({ visit }: Props) => {
           {/* <Icon name="calendar" type="entypo" color="white" /> */}
 
           <View>
+            <Text style={tailwind("text-center text-white text-lg font-bold")}>
+              Date: {new Date(visit.date).toLocaleDateString()}
+            </Text>
+            {/* TO-DO Create time field for visits */}
+            <Text style={tailwind("text-center text-white text-lg font-bold")}>
+              Time: 3:00 PM
+            </Text>
+            {/* <Divider color="white" /> */}
             <Text
               style={tailwind(
                 "text-xs text-white text-center uppercase font-bold"
@@ -53,14 +62,6 @@ const VisitCard = ({ visit }: Props) => {
             >
               {visit.provider}
             </Text>
-            <Text style={tailwind("text-center text-white text-lg font-bold")}>
-              Date: {new Date(visit.date).toLocaleDateString()}
-            </Text>
-            {/* TO-DO Create time field for visits */}
-            <Text style={tailwind("text-center text-white text-lg font-bold")}>
-              Time: {"Insert Time Here"}
-            </Text>
-            <Divider color="gray" />
           </View>
 
           <View style={tailwind("mx-auto pb-5")}>

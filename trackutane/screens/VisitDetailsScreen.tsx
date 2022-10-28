@@ -11,6 +11,7 @@ import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
 import { TabStackParamList } from "../navigator/TabNavigator";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../navigator/RootNavigator";
+import VisitCard from "../components/VisitCard";
 
 export type VisitDetailsScreenNavigationProp = CompositeNavigationProp<
   BottomTabNavigationProp<TabStackParamList, "Visits">,
@@ -40,7 +41,7 @@ const VisitDetailsScreen = () => {
 
   return (
     <View>
-      <Text>VisitScreen</Text>
+      <VisitCard visit={visit} fullWidth />
     </View>
   );
 };
