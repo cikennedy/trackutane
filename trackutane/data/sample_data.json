@@ -125,18 +125,34 @@
         "provider": "Dr. Duane Simmons"
       }
     ],
-      "745251": {
+      "745251": [
+        {
         "visitId": "0dabde0a-56c8-11ed-9b6a-0242ac120002",
         "visitDate": "2022-03-02",
         "visitTime": "10:00 AM",
         "provider": "Kelly Hansen, PA"
       },
-      "389877": {
+      {
+        "visitId": "2d669b14-56cc-11ed-9b6a-0242ac120002",
+        "visitDate": "2022-03-02",
+        "visitTime": "10:00 AM",
+        "provider": "Kelly Hansen, PA"
+      }
+    ],
+      "389877": [
+        {
         "visitId": "0dabdc98-56c8-11ed-9b6a-0242ac120002",
         "visitDate": "2022-09-10",
         "visitTime": "8:00 AM",
         "provider": "Dr. Duane Simmons"
       },
+      {
+        "visitId": "2d6694d4-56cc-11ed-9b6a-0242ac120002",
+        "visitDate": "2022-09-10",
+        "visitTime": "8:00 AM",
+        "provider": "Dr. Duane Simmons"
+      }
+    ],
       "183289": [
         {
         "visitId": "0dabd982-56c8-11ed-9b6a-0242ac120002",
@@ -187,7 +203,41 @@
         ],
         "patient_id": "389877"
       },
+      "2d6694d4-56cc-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 15,
+            "cumulativeDosage": 90,
+            "goalDosage": 170,
+            "height": "5'03",
+            "weight": 135,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2022-11-05",
+            "nextVisitTime": "5:00 PM"
+          }
+        ],
+        "patient_id": "389877"
+      },
       "0dabde0a-56c8-11ed-9b6a-0242ac120002": {
+        "visitDetails": [
+          {
+            "visitDosage": 20,
+            "cumulativeDosage": 90,
+            "goalDosage": 180,
+            "height": "5'02",
+            "weight": 140,
+            "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nisi mollis, pulvinar odio ut, suscipit mi. Integer lacinia sem sit amet magna lacinia egestas.",
+            "cptCode": "11603",
+            "billing": "100.00",
+            "nextVisitDate": "2022-12-11",
+            "nextVisitTime": "12:00 PM"
+          }
+        ],
+        "patient_id": "745251"
+      },
+      "2d669b14-56cc-11ed-9b6a-0242ac120002": {
         "visitDetails": [
           {
             "visitDosage": 20,

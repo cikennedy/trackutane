@@ -7,6 +7,7 @@ type Tracking {
       arguments: [{ name: "id", field: "patient_id" }]
     )
 }
+
 type VisitDetails {
   billing: Float
   cptCode: Int
