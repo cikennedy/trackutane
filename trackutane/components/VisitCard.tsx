@@ -32,7 +32,7 @@ const VisitCard = ({ visit, fullWidth }: Props) => {
       <Card
         containerStyle={[
           tailwind(
-            `${fullWidth ? "rounded-none m-0" : "rounded-lg"}rounded-lg my-2`
+            `${fullWidth ? "rounded-none m-0" : "rounded-lg"} rounded-lg my-2`
           ),
           {
             backgroundColor: fullWidth ? "white" : "#6c63ff",
