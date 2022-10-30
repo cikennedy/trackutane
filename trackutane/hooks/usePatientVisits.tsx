@@ -17,8 +17,6 @@ function usePatientVisits(userId: string) {
       tracking: value.tracking,
     }));
 
-    console.log();
-
     const patientVisits = visits.filter(
       (visit) => visit.tracking.patient_id == userId
     );
