@@ -81,6 +81,12 @@ const VisitCard = ({ visit, fullWidth }: Props) => {
             <Text style={tailwind("text-center text-white text-sm")}>
               Goal Dosage: {visit.tracking.visitDetails.goalDosage}
             </Text>
+            <Text style={tailwind("text-center text-white text-sm")}>
+              Next Appointment: {visit.tracking.visitDetails.nextVisitDate} at{" "}
+              {visit.tracking.visitDetails.nextVisitTime}
+            </Text>
+            <Text>Billing Code: {visit.tracking.visitDetails.cptCode}</Text>
+            <Text>Billing Cost: {visit.tracking.visitDetails.billing}</Text>
           </View>
         </View>
       </Card>
