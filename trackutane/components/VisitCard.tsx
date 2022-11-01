@@ -69,9 +69,18 @@ const VisitCard = ({ visit, fullWidth }: Props) => {
           <View style={tailwind("mx-auto pb-5")}>
             <Text style={tailwind("text-center text-white font-bold mt-5")}>
               Appointment Notes:
+              {visit.tracking.visitDetails.notes}
             </Text>
 
-            <Text style={tailwind("text-center text-white text-sm")}>...</Text>
+            <Text style={tailwind("text-center text-white text-sm")}>
+              Visit Dosage: {visit.tracking.visitDetails.visitDosage}
+            </Text>
+            <Text style={tailwind("text-center text-white text-sm")}>
+              Cumulative Dosage: {visit.tracking.visitDetails.cumulativeDosage}
+            </Text>
+            <Text style={tailwind("text-center text-white text-sm")}>
+              Goal Dosage: {visit.tracking.visitDetails.goalDosage}
+            </Text>
           </View>
         </View>
       </Card>

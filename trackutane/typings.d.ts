@@ -26,7 +26,7 @@ type PatientList = {
 type Tracking = {
   patient_id: ID;
   patient: Patient;
-  visitDetails: VisitDetails[];
+  visitDetails: VisitDetails;
 };
 
 type VisitDetails = {
